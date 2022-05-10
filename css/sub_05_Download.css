@@ -1,0 +1,332 @@
+.download {
+  padding: 30px 0;
+  margin-bottom: 10px;
+}
+.download img {
+  width: 180px;
+  height: 185px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.download > h3 {
+  font-size: 30px;
+  text-align: right;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* download */
+.down_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.down_01 .bg_down01 {
+  background: url(../img/download.jpg) no-repeat;
+  background-size: cover;
+}
+.down_01 .data_01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.down_01 .data_01 > li {
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.down_01 .data_01 > li > a {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000;
+}
+.down_01 .data_01 > li > a:hover {
+  text-decoration: underline;
+}
+.down_01 .data_01 > li > a > img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-left: 10px;
+  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+}
+
+/* table */
+.goud-datasheet-text {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  color: #666;
+}
+
+.goud-datasheet {
+  width: 800px;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.goud-datasheet th {
+  height: 40px;
+  border: 1px solid #000;
+  background-color: #aaa;
+  color: #fff;
+  font-weight: 700;
+}
+.goud-datasheet td {
+  height: 40px;
+  border: 1px solid #000;
+}
+.goud-datasheet td:nth-child(1) {
+  width: 18%;
+}
+.goud-datasheet td:nth-child(2) {
+  width: 19%;
+}
+.goud-datasheet td:nth-child(3) {
+  width: 21%;
+}
+.goud-datasheet td:nth-child(4), .goud-datasheet td:nth-child(6), .goud-datasheet td:nth-child(5) {
+  width: 14%;
+}
+.goud-datasheet thead:first-child tr th {
+  background-color: #ddd;
+  color: #000;
+}
+.goud-datasheet img {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+}
+.goud-datasheet img:hover {
+  filter: none;
+}
+
+.goud-datasheet-clean {
+  width: 800px;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.goud-datasheet-clean th {
+  height: 40px;
+  border: 1px solid #000;
+  background-color: #aaa;
+  color: #fff;
+  font-weight: 700;
+}
+.goud-datasheet-clean td {
+  height: 40px;
+  border: 1px solid #000;
+}
+.goud-datasheet-clean td:nth-child(1) {
+  width: 60%;
+}
+.goud-datasheet-clean td:nth-child(2) {
+  width: 13%;
+}
+.goud-datasheet-clean td:nth-child(3) {
+  width: 13%;
+}
+.goud-datasheet-clean td:nth-child(4), .goud-datasheet-clean .goud-datasheet td:nth-child(5), .goud-datasheet .goud-datasheet-clean td:nth-child(5), .goud-datasheet-clean .goud-datasheet td:nth-child(6), .goud-datasheet .goud-datasheet-clean td:nth-child(6) {
+  width: 13%;
+}
+.goud-datasheet-clean thead:first-child tr th {
+  background-color: #ddd;
+  color: #000;
+}
+.goud-datasheet-clean img {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+}
+.goud-datasheet-clean img:hover {
+  filter: none;
+}
+
+@media screen and (max-width: 767px) {
+  .download {
+    padding: 30px 0;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+  }
+  .download img {
+    width: 180px;
+    height: 185px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .download > h3 {
+    font-size: 30px;
+    text-align: right;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  /* download */
+  .down_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .down_01 .bg_down01 {
+    background: url(../img/download.jpg) no-repeat;
+    background-size: cover;
+  }
+  .down_01 .data_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .down_01 .data_01 > li {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .down_01 .data_01 > li > a {
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+  }
+  .down_01 .data_01 > li > a:hover {
+    text-decoration: underline;
+  }
+  .down_01 .data_01 > li > a > img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-left: 10px;
+    filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+  }
+
+  /* table */
+  .goud-datasheet-text {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    color: #666;
+  }
+
+  .goud-datasheet {
+    width: 650px;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  .goud-datasheet th {
+    height: 35px;
+    border: 1px solid #000;
+    background-color: #aaa;
+    color: #fff;
+    font-weight: 700;
+  }
+  .goud-datasheet td {
+    height: 35px;
+    border: 1px solid #000;
+  }
+  .goud-datasheet td:nth-child(1) {
+    width: 18%;
+  }
+  .goud-datasheet td:nth-child(2) {
+    width: 19%;
+  }
+  .goud-datasheet td:nth-child(3) {
+    width: 21%;
+  }
+  .goud-datasheet td:nth-child(4), .goud-datasheet td:nth-child(5), .goud-datasheet td:nth-child(6) {
+    width: 14%;
+  }
+  .goud-datasheet thead:first-child tr th {
+    background-color: #ddd;
+    color: #000;
+  }
+  .goud-datasheet img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+  }
+  .goud-datasheet img:hover {
+    filter: none;
+  }
+
+  .goud-datasheet-clean {
+    width: 650px;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+  .goud-datasheet-clean th {
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #aaa;
+    color: #fff;
+    font-weight: 700;
+  }
+  .goud-datasheet-clean td {
+    height: 40px;
+    border: 1px solid #000;
+  }
+  .goud-datasheet-clean td:nth-child(1) {
+    width: 60%;
+  }
+  .goud-datasheet-clean td:nth-child(2) {
+    width: 13%;
+  }
+  .goud-datasheet-clean td:nth-child(3) {
+    width: 13%;
+  }
+  .goud-datasheet-clean td:nth-child(4), .goud-datasheet-clean .goud-datasheet td:nth-child(5), .goud-datasheet .goud-datasheet-clean td:nth-child(5), .goud-datasheet-clean .goud-datasheet td:nth-child(6), .goud-datasheet .goud-datasheet-clean td:nth-child(6) {
+    width: 13%;
+  }
+  .goud-datasheet-clean thead:first-child tr th {
+    background-color: #ddd;
+    color: #000;
+  }
+  .goud-datasheet-clean img {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+  }
+  .goud-datasheet-clean img:hover {
+    filter: none;
+  }
+}
+
+/*# sourceMappingURL=sub_05_Download.css.map */

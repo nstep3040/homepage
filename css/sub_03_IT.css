@@ -1,0 +1,592 @@
+.product_it {
+  margin-bottom: 10px;
+}
+.product_it img {
+  width: 180px;
+  height: 185px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.product_it > h3 {
+  font-size: 3rem;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  color: #333;
+}
+.product_it > p > span {
+  font-size: 4rem;
+}
+.product_it > .lastDetails {
+  margin-bottom: 50px;
+}
+.product_it .detail-info {
+  float: right;
+  font-size: 1.5rem;
+  color: #555;
+  text-align: right;
+}
+.product_it details > summary {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.product_it details > summary > img {
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+  margin: 0 !important;
+}
+.product_it details .samsung-logo img {
+  width: 180px;
+  height: 35px;
+}
+.product_it details .lg-logo img {
+  width: 110px;
+  height: 50px;
+}
+.product_it details .apple-logo img {
+  width: 50px;
+  height: 60px;
+}
+.product_it details .hp-logo img {
+  width: 60px;
+  height: 60px;
+}
+.product_it details .lenovo-logo img {
+  width: 155px;
+  height: 35px;
+}
+.product_it details .dell-logo img {
+  width: 65px;
+  height: 65px;
+}
+.product_it details .asus-logo img {
+  width: 145px;
+  height: 35px;
+}
+.product_it details .microsoft-logo img {
+  width: 170px;
+  height: 40px;
+}
+.product_it details .wacom-logo img {
+  width: 80px;
+  height: 75px;
+}
+
+/* pc */
+.it_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.it_01 .bg_it01 {
+  background: url(../img/pc_main_01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.it_01 .pc_01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.it_01 .pc_01 > li {
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.it_01 .pc_01 > li > p {
+  font-size: 1.8rem;
+}
+
+/* it device */
+.it_02 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.it_02 .bg_it02 {
+  background: url(../img/it_device_main_02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.it_02 .device_01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.it_02 .device_01 > li {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.it_02 .device_01 > li > p {
+  font-size: 1.8rem;
+}
+
+/* smart */
+.it_03 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.it_03 .bg_it03 {
+  background: url(../img/smart_solution.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.it_03 .smart_01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.it_03 .smart_01 > li {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #eee;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.it_03 .smart_01 > li > p {
+  font-size: 1.8rem;
+}
+.it_03 .smart_hint {
+  font-size: 1.5rem;
+  text-align: right;
+  color: #666;
+}
+.it_03 .smart_02 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.it_03 .smart_02 img {
+  width: 100%;
+}
+.it_03 .smart_02 .s_select {
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.it_03 .smart_02 .s_select:hover {
+  border: 3px solid #f00;
+  cursor: help;
+}
+.it_03 .smart_02 .s_board {
+  top: 20px;
+  right: 605px;
+  width: 95px;
+  height: 33px;
+}
+.it_03 .smart_02 .s_video {
+  top: 27px;
+  right: 220px;
+  width: 100px;
+  height: 33px;
+}
+.it_03 .smart_02 .s_display {
+  top: 419px;
+  right: 13px;
+  width: 145px;
+  height: 33px;
+}
+.it_03 .smart_02 .s_camera {
+  top: 483px;
+  right: 36px;
+  width: 175px;
+  height: 33px;
+}
+.it_03 .smart_02 .s_desk {
+  top: 558px;
+  right: 175px;
+  width: 125px;
+  height: 33px;
+}
+.it_03 .smart_02 .popup {
+  display: none;
+}
+.it_03 .smart_02 .popup .s_pop {
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 440px;
+  height: 450px;
+  padding: 20px;
+  background-color: #fff;
+}
+.it_03 .smart_02 .popup .s_pop > h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.it_03 .smart_02 .popup .s_pop > p {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.it_03 .smart_02 .popup .s_pop img {
+  height: 250px;
+  object-fit: contain;
+}
+.it_03 .smart_02 .popup .b_close {
+  position: absolute;
+  width: 440px;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 20px;
+  background-color: #888;
+}
+.it_03 .smart_02 .popup .b_close img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.it_03 .smart_02 .popup .b_close img:hover {
+  cursor: pointer;
+}
+.it_03 .smart_02 .popup .b_close_01 {
+  top: 53px;
+  right: 605px;
+}
+.it_03 .smart_02 .popup .s_pop_01 {
+  top: 93px;
+  right: 605px;
+}
+.it_03 .smart_02 .popup .b_close_02 {
+  top: 60px;
+  right: 220px;
+}
+.it_03 .smart_02 .popup .s_pop_02 {
+  top: 100px;
+  right: 220px;
+}
+.it_03 .smart_02 .popup .b_close_03 {
+  top: -71px;
+  right: 13px;
+}
+.it_03 .smart_02 .popup .s_pop_03 {
+  top: -31px;
+  right: 13px;
+}
+.it_03 .smart_02 .popup .b_close_04 {
+  top: -4px;
+  right: 36px;
+}
+.it_03 .smart_02 .popup .s_pop_04 {
+  top: 36px;
+  right: 36px;
+}
+.it_03 .smart_02 .popup .b_close_05 {
+  top: 68px;
+  right: 175px;
+}
+.it_03 .smart_02 .popup .s_pop_05 {
+  top: 108px;
+  right: 175px;
+}
+
+@media screen and (max-width: 767px) {
+  .product_it {
+    margin-bottom: 10px;
+  }
+  .product_it img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .product_it > h3 {
+    font-size: 3rem;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .product_it > p > span {
+    font-size: 4rem;
+  }
+  .product_it > .lastDetails {
+    margin-bottom: 50px;
+  }
+  .product_it .detail-info {
+    float: none;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: right;
+  }
+  .product_it details > summary {
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  .product_it details > summary > img {
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0 !important;
+  }
+  .product_it details .samsung-logo img {
+    width: 180px;
+    height: 35px;
+  }
+  .product_it details .lg-logo img {
+    width: 110px;
+    height: 50px;
+  }
+  .product_it details .apple-logo img {
+    width: 50px;
+    height: 60px;
+  }
+  .product_it details .hp-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .product_it details .lenovo-logo img {
+    width: 155px;
+    height: 35px;
+  }
+  .product_it details .dell-logo img {
+    width: 65px;
+    height: 65px;
+  }
+  .product_it details .asus-logo img {
+    width: 145px;
+    height: 35px;
+  }
+  .product_it details .microsoft-logo img {
+    width: 170px;
+    height: 40px;
+  }
+  .product_it details .wacom-logo img {
+    width: 80px;
+    height: 75px;
+  }
+
+  /* pc */
+  .it_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .it_01 .bg_it01 {
+    background: url(../img/pc_main_01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .it_01 .pc_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .it_01 .pc_01 > li {
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .it_01 .pc_01 > li > p {
+    font-size: 1.5rem;
+  }
+
+  /* it device */
+  .it_02 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .it_02 .bg_it02 {
+    background: url(../img/it_device_main_02.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .it_02 .device_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .it_02 .device_01 > li {
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .it_02 .device_01 > li img {
+    height: 80px;
+  }
+  .it_02 .device_01 > li > p {
+    font-size: 1.5rem;
+  }
+
+  /* smart */
+  .it_03 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .it_03 .bg_it03 {
+    background: url(../img/smart_solution.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .it_03 .smart_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .it_03 .smart_01 > li {
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .it_03 .smart_01 > li > p {
+    font-size: 1.5rem;
+  }
+  .it_03 .smart_hint {
+    display: none;
+  }
+  .it_03 .smart_02 {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .it_03 .smart_02 img {
+    width: 80vw;
+  }
+  .it_03 .smart_02 .s_select {
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .it_03 .smart_02 .s_select:hover {
+    border: 3px solid #f00;
+    cursor: help;
+  }
+  .it_03 .smart_02 .s_board {
+    display: none;
+  }
+  .it_03 .smart_02 .s_video {
+    display: none;
+  }
+  .it_03 .smart_02 .s_display {
+    display: none;
+  }
+  .it_03 .smart_02 .s_camera {
+    display: none;
+  }
+  .it_03 .smart_02 .s_desk {
+    display: none;
+  }
+  .it_03 .smart_02 .popup {
+    display: none;
+  }
+  .it_03 .smart_02 .popup .s_pop {
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 440px;
+    height: 450px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .it_03 .smart_02 .popup .s_pop > h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .it_03 .smart_02 .popup .s_pop > p {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  .it_03 .smart_02 .popup .s_pop img {
+    height: 250px;
+    object-fit: contain;
+  }
+  .it_03 .smart_02 .popup .b_close {
+    display: none;
+  }
+  .it_03 .smart_02 .popup .b_close img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .it_03 .smart_02 .popup .b_close img:hover {
+    cursor: pointer;
+  }
+  .it_03 .smart_02 .popup .b_close_01 {
+    top: 53px;
+    right: 605px;
+  }
+  .it_03 .smart_02 .popup .s_pop_01 {
+    top: 93px;
+    right: 605px;
+  }
+  .it_03 .smart_02 .popup .b_close_02 {
+    top: 60px;
+    right: 220px;
+  }
+  .it_03 .smart_02 .popup .s_pop_02 {
+    top: 100px;
+    right: 220px;
+  }
+  .it_03 .smart_02 .popup .b_close_03 {
+    top: -71px;
+    right: 13px;
+  }
+  .it_03 .smart_02 .popup .s_pop_03 {
+    top: -31px;
+    right: 13px;
+  }
+  .it_03 .smart_02 .popup .b_close_04 {
+    top: -4px;
+    right: 36px;
+  }
+  .it_03 .smart_02 .popup .s_pop_04 {
+    top: 36px;
+    right: 36px;
+  }
+  .it_03 .smart_02 .popup .b_close_05 {
+    top: 68px;
+    right: 175px;
+  }
+  .it_03 .smart_02 .popup .s_pop_05 {
+    top: 108px;
+    right: 175px;
+  }
+}
+
+/*# sourceMappingURL=sub_03_IT.css.map */

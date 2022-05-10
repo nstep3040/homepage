@@ -1,0 +1,97 @@
+.contact_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+
+  // background image
+  .bg_cont01 {
+    background: url(../img/directions.jpg) no-repeat;
+  }
+
+  /* googlemap */
+  .googleMap {
+    width: 100%;
+    height: 600px;
+    margin: 20px 0;
+    display: inline-block;
+  }
+}
+
+/* googlemap end */
+
+/* adress */
+.adress {
+  font-size: 18px;
+
+  strong {
+    display: inline-block;
+    padding: 15px 30px 15px 0;
+  }
+
+  p {
+    display: inline-block;
+    min-width: 200px;
+    padding: 15px 0;
+  }
+
+  & > ul {
+    & > li {
+      &:first-child {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}
+
+//------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------
+
+@media screen and (max-width: 767px) {
+  .contact_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    // background image
+    .bg_cont01 {
+      background: url(../img/directions.jpg) no-repeat;
+    }
+
+    /* googlemap */
+    .googleMap {
+      width: 100%;
+      height: 300px;
+      margin: 20px 0;
+      display: inline-block;
+    }
+  }
+
+  /* googlemap end */
+
+  /* adress */
+  .adressWrap {
+    font-size: 1.5rem;
+
+    .adress {
+      strong {
+        display: inline-block;
+        padding: 15px 30px 5px 0;
+      }
+
+      p {
+        display: block;
+        min-width: 200px;
+        padding: 0;
+      }
+
+      & > ul {
+        & > li {
+          &:first-child {
+            border-bottom: 1px solid #ccc;
+          }
+        }
+      }
+    }
+  }
+}

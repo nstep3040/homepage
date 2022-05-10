@@ -1,0 +1,277 @@
+.product_soft {
+  margin-bottom: 10px;
+}
+.product_soft img {
+  width: 180px;
+  height: 185px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.product_soft > h3 {
+  font-size: 3rem;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  color: #333;
+}
+.product_soft > p > span {
+  font-size: 4rem;
+}
+.product_soft > .lastDetails {
+  margin-bottom: 50px;
+}
+.product_soft .detail-info {
+  float: right;
+  font-size: 1.5rem;
+  color: #555;
+  text-align: right;
+}
+.product_soft details > summary {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.product_soft details > summary > img {
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
+  margin: 0 !important;
+}
+.product_soft details .samsung-logo img {
+  width: 180px;
+  height: 35px;
+}
+.product_soft details .lg-logo img {
+  width: 110px;
+  height: 50px;
+}
+.product_soft details .apple-logo img {
+  width: 50px;
+  height: 60px;
+}
+.product_soft details .hp-logo img {
+  width: 60px;
+  height: 60px;
+}
+.product_soft details .lenovo-logo img {
+  width: 155px;
+  height: 35px;
+}
+.product_soft details .dell-logo img {
+  width: 65px;
+  height: 65px;
+}
+.product_soft details .asus-logo img {
+  width: 145px;
+  height: 35px;
+}
+.product_soft details .microsoft-logo img {
+  width: 170px;
+  height: 40px;
+}
+.product_soft details .wacom-logo img {
+  width: 80px;
+  height: 75px;
+}
+
+.software_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.software_01 .bg_software01 {
+  background: url(../img/software_main_01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.software_01 .office_01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.software_01 .office_01 > li {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.software_01 .office_01 > li > p {
+  font-size: 1.8rem;
+}
+
+.software_02 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.software_02 .bg_software02 {
+  background: url(../img/software_main_01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.software_02 .research_01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.software_02 .research_01 > li {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.software_02 .research_01 > li > p {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .product_soft {
+    margin-bottom: 10px;
+  }
+  .product_soft img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .product_soft > h3 {
+    font-size: 3rem;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .product_soft > p > span {
+    font-size: 4rem;
+  }
+  .product_soft > .lastDetails {
+    margin-bottom: 50px;
+  }
+  .product_soft .detail-info {
+    float: right;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: right;
+  }
+  .product_soft details > summary {
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  .product_soft details > summary > img {
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    margin: 0 !important;
+  }
+  .product_soft details .samsung-logo img {
+    width: 180px;
+    height: 35px;
+  }
+  .product_soft details .lg-logo img {
+    width: 110px;
+    height: 50px;
+  }
+  .product_soft details .apple-logo img {
+    width: 50px;
+    height: 60px;
+  }
+  .product_soft details .hp-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .product_soft details .lenovo-logo img {
+    width: 155px;
+    height: 35px;
+  }
+  .product_soft details .dell-logo img {
+    width: 65px;
+    height: 65px;
+  }
+  .product_soft details .asus-logo img {
+    width: 145px;
+    height: 35px;
+  }
+  .product_soft details .microsoft-logo img {
+    width: 170px;
+    height: 40px;
+  }
+  .product_soft details .wacom-logo img {
+    width: 80px;
+    height: 75px;
+  }
+
+  .software_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .software_01 .bg_software01 {
+    background: url(../img/software_main_01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .software_01 .office_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .software_01 .office_01 > li {
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .software_01 .office_01 > li > p {
+    font-size: 1.5rem;
+  }
+
+  .software_02 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .software_02 .bg_software02 {
+    background: url(../img/software_main_01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .software_02 .research_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .software_02 .research_01 > li {
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .software_02 .research_01 > li > p {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=sub_04_Software.css.map */

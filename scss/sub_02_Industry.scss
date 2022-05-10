@@ -1,0 +1,871 @@
+$listBackground: #eee;
+
+.main {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.product_indu {
+  margin-bottom: 10px;
+
+  img {
+    width: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  & > h3 {
+    font-size: 3rem;
+    text-align: right;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  & > p > span {
+    font-size: 4rem;
+  }
+}
+
+/* layout */
+
+// teledyne
+.industry_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+
+  //background image
+  .bg_industry01 {
+    background: url(../img/teledyne_main_02.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  //teledyne info
+  .tele_Info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    background-color: #eee;
+
+    .tele_infoText {
+      padding-right: 40px;
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+    }
+
+    .tele_infoImg {
+      width: 30%;
+      object-fit: contain;
+    }
+  }
+
+  // product teledyne
+  .tele_Con01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > li {
+      display: inline-block;
+      width: 200px;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: $listBackground;
+      margin: 0 15px;
+      margin-bottom: 30px;
+
+      & > p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+/* goudsmit */
+.industry_02 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+
+  // background image
+  .bg_industry02 {
+    background: url(../img/goudsmit_main_01.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .goud_Info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: #eee;
+
+    .goud_infoText {
+      padding-right: 40px;
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+    }
+
+    .goud_infoImg {
+      width: 30%;
+      object-fit: contain;
+    }
+  }
+
+  .goud_Mag01,
+  .goud_Mag02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > li {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: $listBackground;
+      margin: 0 15px;
+      margin-bottom: 30px;
+
+      & > img {
+        height: 185px;
+        object-fit: contain;
+      }
+
+      & > p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .goud_Mag01 {
+    & > li {
+      &:hover {
+        .selectMag {
+          display: block;
+          cursor: pointer;
+          border-radius: 10px;
+          background-color: rgba(0, 90, 255, 0.6);
+        }
+      }
+    }
+  }
+
+  .goud_Mag02 > li {
+    height: 330px;
+  }
+
+  // datasheet
+  .selectMag {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+    h3 {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 150px;
+      color: #fff;
+      font-size: 1.9rem;
+      border: 2px solid #fff;
+    }
+  }
+
+  .dataSheet {
+    position: absolute;
+    left: 12vw;
+    width: 75vw;
+    height: 440px;
+    font-size: 2rem;
+    padding: 20px;
+    z-index: 50;
+    background-color: #ddd;
+
+    .closeBtn {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 3.5rem;
+      color: #777;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .magImageWrap {
+      position: relative;
+      float: left;
+      width: 30%;
+      height: 400px;
+      background-color: #fff;
+
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        text-align: center;
+        color: #999;
+
+        &:hover {
+          color: #000;
+          cursor: pointer;
+        }
+
+        &:first-child {
+          left: 10px;
+        }
+
+        &:last-child {
+          right: 10px;
+        }
+      }
+
+      .magImages {
+        display: flex;
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        align-items: center;
+        object-fit: contain;
+
+        img {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+        }
+      }
+
+      .imgController {
+        width: 280px;
+        height: 40px;
+        margin: 0 auto;
+        text-align: center;
+
+        label {
+          display: inline-block;
+          height: 40px;
+          font-size: 1.5rem;
+          line-height: 30px;
+          margin: 0 7px;
+          color: #999;
+        }
+
+        input {
+          &[type="radio"] {
+            &:checked + label {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    .specInfoWrap {
+      display: flex;
+      float: right;
+      width: 600px;
+      height: 400px;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .specWrap {
+        width: 100%;
+        height: auto;
+
+        & > p {
+          margin-bottom: 10px;
+        }
+
+        .spec {
+          .specName {
+            float: left;
+            width: 50%;
+          }
+          .specValue {
+            float: right;
+            width: 50%;
+          }
+        }
+      }
+
+      .dataSheetDownWrap {
+        width: 100%;
+        height: auto;
+
+        .downWrap {
+          .downName {
+            float: left;
+            width: 50%;
+          }
+
+          .downLink {
+            float: right;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            a {
+              display: inline-block;
+              text-align: right;
+            }
+
+            img {
+              margin: 0;
+              width: 23px;
+              height: 23px;
+              filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @at-root .click-block {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* aegid */
+
+.industry_03 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+
+  // background image
+  .bg_industry03 {
+    background: url(../img/slide_show_03.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .aeg_Info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    background-color: $listBackground;
+
+    .aeg_infoText {
+      display: flex;
+      padding-right: 40px;
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+    }
+
+    .aeg_infoImg {
+      width: 30%;
+      object-fit: contain;
+    }
+  }
+
+  .aeg_Rfid01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > li {
+      display: inline-block;
+      width: 200px;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: #eee;
+      margin: 0 15px;
+      margin-bottom: 30px;
+
+      & img {
+        height: 185px;
+        object-fit: contain;
+      }
+
+      & p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+@media screen and (max-width: 767px) {
+  $listBackground: #eee;
+
+  .main {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .product_indu {
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    & > h3 {
+      font-size: 2rem;
+      text-align: right;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    & > p > span {
+      font-size: 4rem;
+    }
+  }
+
+  /* layout */
+
+  // teledyne
+  .industry_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    //background image
+    .bg_industry01 {
+      background: url(../img/teledyne_main_02.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    //teledyne info
+    .tele_Info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: auto;
+      padding: 30px;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      background-color: #eee;
+
+      .tele_infoText {
+        padding: 0;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+      }
+
+      .tele_infoImg {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    // product teledyne
+    .tele_Con01 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      & > li {
+        display: inline-block;
+        width: 130px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: $listBackground;
+        margin: 0 15px;
+        margin-bottom: 30px;
+
+        & > p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  /* goudsmit */
+  .industry_02 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    // background image
+    .bg_industry02 {
+      background: url(../img/goudsmit_main_01.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .goud_Info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: auto;
+      padding: 30px;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background-color: #eee;
+
+      .goud_infoText {
+        padding: 0;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+      }
+
+      .goud_infoImg {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .goud_Mag01,
+    .goud_Mag02 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      & > li {
+        position: relative;
+        display: inline-block;
+        width: 130px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $listBackground;
+        margin: 0 15px;
+        margin-bottom: 30px;
+
+        & > img {
+          height: 100px;
+          object-fit: contain;
+        }
+
+        & > p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .goud_Mag01 {
+      & > li {
+        &:hover {
+          .selectMag {
+            display: block;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgba(0, 90, 255, 0.6);
+          }
+        }
+      }
+    }
+
+    .goud_Mag02 > li {
+      height: auto;
+    }
+
+    // datasheet
+    .selectMag {
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      top: 0;
+      left: 0;
+
+      h3 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 90px;
+        color: #fff;
+        font-size: 1.5rem;
+        border: 2px solid #fff;
+      }
+    }
+
+    .dataSheet {
+      position: absolute;
+      left: 12vw;
+      width: 75vw;
+      height: 600px;
+      font-size: 2rem;
+      padding: 10px;
+      z-index: 50;
+      background-color: #ddd;
+
+      .closeBtn {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 3.5rem;
+        color: #777;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .magImageWrap {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 50%;
+        background-color: #fff;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 30px;
+          text-align: center;
+          color: #999;
+
+          &:hover {
+            color: #000;
+            cursor: pointer;
+          }
+
+          &:first-child {
+            left: 5px;
+          }
+
+          &:last-child {
+            right: 5px;
+          }
+        }
+
+        .magImages {
+          display: flex;
+          width: 80%;
+          height: 80%;
+          margin: 0 auto;
+          align-items: center;
+          object-fit: contain;
+
+          img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+          }
+        }
+
+        .imgController {
+          width: 100%;
+          height: 40px;
+          margin: 0 auto;
+          text-align: center;
+
+          label {
+            display: inline-block;
+            height: 40px;
+            font-size: 1.3rem;
+            line-height: 30px;
+            margin: 0 7px;
+            color: #999;
+          }
+
+          input {
+            &[type="radio"] {
+              &:checked + label {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+
+      .specInfoWrap {
+        display: flex;
+        float: right;
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        .specWrap {
+          width: 100%;
+          height: auto;
+
+          & > p {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+          }
+
+          .spec {
+            p {
+              font-size: 1.5rem;
+              b {
+                font-size: 1.5rem;
+              }
+            }
+            .specName {
+              float: left;
+              width: 50%;
+            }
+            .specValue {
+              float: right;
+              width: 50%;
+
+              p {
+                text-align: right;
+              }
+            }
+          }
+        }
+
+        .dataSheetDownWrap {
+          width: 100%;
+          height: auto;
+
+          .downWrap {
+            .downName {
+              float: left;
+              width: 50%;
+
+              p {
+                font-size: 1.5rem;
+              }
+            }
+
+            .downLink {
+              float: right;
+              width: 50%;
+              display: flex;
+              flex-direction: column;
+
+              a {
+                display: inline-block;
+                text-align: right;
+              }
+
+              img {
+                margin: 0;
+                width: 23px;
+                height: 23px;
+                filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @at-root .click-block {
+      position: fixed;
+      top: 0px;
+      width: 100vw;
+      height: 100vh;
+      z-index: 40;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  /* aegid */
+
+  .industry_03 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    // background image
+    .bg_industry03 {
+      background: url(../img/slide_show_03.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .aeg_Info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: auto;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 100px;
+      background-color: $listBackground;
+
+      .aeg_infoText {
+        display: flex;
+        padding-right: 40px;
+        font-size: 1.5rem;
+        line-height: 3.3rem;
+      }
+
+      .aeg_infoImg {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .aeg_Rfid01 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      & > li {
+        position: relative;
+        display: inline-block;
+        width: 130px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $listBackground;
+        margin: 0 15px;
+        margin-bottom: 30px;
+
+        & img {
+          height: 100px;
+          object-fit: contain;
+        }
+
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

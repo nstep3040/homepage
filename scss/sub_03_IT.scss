@@ -1,0 +1,717 @@
+$listBackground: #eee;
+
+.product_it {
+  margin-bottom: 10px;
+
+  img {
+    width: 180px;
+    height: 185px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  & > h3 {
+    font-size: 3rem;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  & > p > span {
+    font-size: 4rem;
+  }
+
+  // logo insert
+  & > .lastDetails {
+    margin-bottom: 50px;
+  }
+
+  .detail-info {
+    float: right;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: right;
+  }
+  details {
+    & > summary {
+      font-size: 3rem;
+      cursor: pointer;
+      margin: 10px 0;
+
+      & > img {
+        display: inline-block;
+        background-size: contain;
+        vertical-align: middle;
+        margin: 0 !important;
+      }
+    }
+
+    .samsung-logo img {
+      width: 180px;
+      height: 35px;
+    }
+    .lg-logo img {
+      width: 110px;
+      height: 50px;
+    }
+    .apple-logo img {
+      width: 50px;
+      height: 60px;
+    }
+    .hp-logo img {
+      width: 60px;
+      height: 60px;
+    }
+    .lenovo-logo img {
+      width: 155px;
+      height: 35px;
+    }
+    .dell-logo img {
+      width: 65px;
+      height: 65px;
+    }
+    .asus-logo img {
+      width: 145px;
+      height: 35px;
+    }
+    .microsoft-logo img {
+      width: 170px;
+      height: 40px;
+    }
+    .wacom-logo img {
+      width: 80px;
+      height: 75px;
+    }
+  }
+}
+
+/* pc */
+
+.it_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+
+  // background image
+  .bg_it01 {
+    background: url(../img/pc_main_01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .pc_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > li {
+      width: 200px;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+      margin: 0 15px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      background-color: $listBackground;
+
+      & > p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+/* it device */
+
+.it_02 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+
+  // background image
+  .bg_it02 {
+    background: url(../img/it_device_main_02.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .device_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > li {
+      display: inline-block;
+      width: 200px;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: $listBackground;
+      margin: 0 15px;
+      margin-bottom: 30px;
+
+      & > p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+/* smart */
+
+.it_03 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+
+  // background image
+  .bg_it03 {
+    background: url(../img/smart_solution.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .smart_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    & > li {
+      display: inline-block;
+      width: 200px;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      background-color: $listBackground;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 0 15px;
+      margin-bottom: 30px;
+
+      & > p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .smart_hint {
+    font-size: 1.5rem;
+    text-align: right;
+    color: #666;
+  }
+
+  .smart_02 {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    .s_select {
+      position: absolute;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        border: 3px solid #f00;
+        cursor: help;
+      }
+    }
+
+    .s_board {
+      top: 20px;
+      right: 605px;
+      width: 95px;
+      height: 33px;
+    }
+
+    .s_video {
+      top: 27px;
+      right: 220px;
+      width: 100px;
+      height: 33px;
+    }
+
+    .s_display {
+      top: 419px;
+      right: 13px;
+      width: 145px;
+      height: 33px;
+    }
+
+    .s_camera {
+      top: 483px;
+      right: 36px;
+      width: 175px;
+      height: 33px;
+    }
+
+    .s_desk {
+      top: 558px;
+      right: 175px;
+      width: 125px;
+      height: 33px;
+    }
+
+    .popup {
+      display: none;
+
+      .s_pop {
+        position: absolute;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 440px;
+        height: 450px;
+        padding: 20px;
+        background-color: #fff;
+
+        & > h3 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+
+        & > p {
+          font-size: 1.7rem;
+          font-weight: 500;
+        }
+
+        img {
+          height: 250px;
+          object-fit: contain;
+        }
+      }
+
+      .b_close {
+        position: absolute;
+        width: 440px;
+        height: 40px;
+        line-height: 40px;
+        padding-right: 20px;
+        background-color: #888;
+
+        img {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 20px;
+          height: 20px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .b_close_01 {
+        top: 53px;
+        right: 605px;
+      }
+
+      .s_pop_01 {
+        top: 93px;
+        right: 605px;
+      }
+
+      .b_close_02 {
+        top: 60px;
+        right: 220px;
+      }
+
+      .s_pop_02 {
+        top: 100px;
+        right: 220px;
+      }
+
+      .b_close_03 {
+        top: -71px;
+        right: 13px;
+      }
+
+      .s_pop_03 {
+        top: -31px;
+        right: 13px;
+      }
+
+      .b_close_04 {
+        top: -4px;
+        right: 36px;
+      }
+
+      .s_pop_04 {
+        top: 36px;
+        right: 36px;
+      }
+
+      .b_close_05 {
+        top: 68px;
+        right: 175px;
+      }
+
+      .s_pop_05 {
+        top: 108px;
+        right: 175px;
+      }
+
+      // .s_over {
+      //   position: absolute;
+      //   display: inline-block;
+      //   border-radius: 50%;
+      //   background-color: rgba(0, 0, 0, 0.5);
+      // }
+    }
+  }
+}
+
+//-------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+@media screen and (max-width: 767px) {
+  $listBackground: #eee;
+
+  .product_it {
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    & > h3 {
+      font-size: 3rem;
+      text-align: left;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    & > p > span {
+      font-size: 4rem;
+    }
+
+    // logo insert
+    & > .lastDetails {
+      margin-bottom: 50px;
+    }
+
+    .detail-info {
+      float: none;
+      font-size: 1.2rem;
+      color: #555;
+      text-align: right;
+    }
+    details {
+      & > summary {
+        font-size: 3rem;
+        cursor: pointer;
+        margin: 10px 0;
+
+        & > img {
+          display: inline-block;
+          background-size: contain;
+          vertical-align: middle;
+          margin: 0 !important;
+        }
+      }
+
+      .samsung-logo img {
+        width: 180px;
+        height: 35px;
+      }
+      .lg-logo img {
+        width: 110px;
+        height: 50px;
+      }
+      .apple-logo img {
+        width: 50px;
+        height: 60px;
+      }
+      .hp-logo img {
+        width: 60px;
+        height: 60px;
+      }
+      .lenovo-logo img {
+        width: 155px;
+        height: 35px;
+      }
+      .dell-logo img {
+        width: 65px;
+        height: 65px;
+      }
+      .asus-logo img {
+        width: 145px;
+        height: 35px;
+      }
+      .microsoft-logo img {
+        width: 170px;
+        height: 40px;
+      }
+      .wacom-logo img {
+        width: 80px;
+        height: 75px;
+      }
+    }
+  }
+
+  /* pc */
+
+  .it_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    // background image
+    .bg_it01 {
+      background: url(../img/pc_main_01.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .pc_01 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      & > li {
+        width: 130px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 15px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: $listBackground;
+
+        & > p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  /* it device */
+
+  .it_02 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    // background image
+    .bg_it02 {
+      background: url(../img/it_device_main_02.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .device_01 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      & > li {
+        width: 130px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 15px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: $listBackground;
+
+        img {
+          height: 80px;
+        }
+
+        & > p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  /* smart */
+
+  .it_03 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    // background image
+    .bg_it03 {
+      background: url(../img/smart_solution.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .smart_01 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      & > li {
+        width: 130px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 15px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        background-color: $listBackground;
+
+        & > p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .smart_hint {
+      display: none;
+    }
+
+    .smart_02 {
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+
+      img {
+        width: 80vw;
+      }
+
+      .s_select {
+        position: absolute;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          border: 3px solid #f00;
+          cursor: help;
+        }
+      }
+
+      .s_board {
+        display: none;
+      }
+
+      .s_video {
+        display: none;
+      }
+
+      .s_display {
+        display: none;
+      }
+
+      .s_camera {
+        display: none;
+      }
+
+      .s_desk {
+        display: none;
+      }
+
+      .popup {
+        display: none;
+
+        .s_pop {
+          position: absolute;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          width: 440px;
+          height: 450px;
+          padding: 20px;
+          background-color: #fff;
+
+          & > h3 {
+            font-size: 2rem;
+            font-weight: 700;
+          }
+
+          & > p {
+            font-size: 1.7rem;
+            font-weight: 500;
+          }
+
+          img {
+            height: 250px;
+            object-fit: contain;
+          }
+        }
+
+        .b_close {
+          display: none;
+
+          img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .b_close_01 {
+          top: 53px;
+          right: 605px;
+        }
+
+        .s_pop_01 {
+          top: 93px;
+          right: 605px;
+        }
+
+        .b_close_02 {
+          top: 60px;
+          right: 220px;
+        }
+
+        .s_pop_02 {
+          top: 100px;
+          right: 220px;
+        }
+
+        .b_close_03 {
+          top: -71px;
+          right: 13px;
+        }
+
+        .s_pop_03 {
+          top: -31px;
+          right: 13px;
+        }
+
+        .b_close_04 {
+          top: -4px;
+          right: 36px;
+        }
+
+        .s_pop_04 {
+          top: 36px;
+          right: 36px;
+        }
+
+        .b_close_05 {
+          top: 68px;
+          right: 175px;
+        }
+
+        .s_pop_05 {
+          top: 108px;
+          right: 175px;
+        }
+      }
+    }
+  }
+}

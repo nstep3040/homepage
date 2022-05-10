@@ -1,0 +1,717 @@
+.main {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.product_indu {
+  margin-bottom: 10px;
+}
+.product_indu img {
+  width: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.product_indu > h3 {
+  font-size: 3rem;
+  text-align: right;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+  color: #333;
+}
+.product_indu > p > span {
+  font-size: 4rem;
+}
+
+/* layout */
+.industry_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.industry_01 .bg_industry01 {
+  background: url(../img/teledyne_main_02.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.industry_01 .tele_Info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: auto;
+  padding: 30px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.industry_01 .tele_Info .tele_infoText {
+  padding-right: 40px;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+.industry_01 .tele_Info .tele_infoImg {
+  width: 30%;
+  object-fit: contain;
+}
+.industry_01 .tele_Con01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.industry_01 .tele_Con01 > li {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.industry_01 .tele_Con01 > li > p {
+  font-size: 1.8rem;
+}
+
+/* goudsmit */
+.industry_02 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.industry_02 .bg_industry02 {
+  background: url(../img/goudsmit_main_01.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.industry_02 .goud_Info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: auto;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.industry_02 .goud_Info .goud_infoText {
+  padding-right: 40px;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+.industry_02 .goud_Info .goud_infoImg {
+  width: 30%;
+  object-fit: contain;
+}
+.industry_02 .goud_Mag01,
+.industry_02 .goud_Mag02 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.industry_02 .goud_Mag01 > li,
+.industry_02 .goud_Mag02 > li {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.industry_02 .goud_Mag01 > li > img,
+.industry_02 .goud_Mag02 > li > img {
+  height: 185px;
+  object-fit: contain;
+}
+.industry_02 .goud_Mag01 > li > p,
+.industry_02 .goud_Mag02 > li > p {
+  font-size: 18px;
+}
+.industry_02 .goud_Mag01 > li:hover .selectMag {
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(0, 90, 255, 0.6);
+}
+.industry_02 .goud_Mag02 > li {
+  height: 330px;
+}
+.industry_02 .selectMag {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+.industry_02 .selectMag h3 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 150px;
+  color: #fff;
+  font-size: 1.9rem;
+  border: 2px solid #fff;
+}
+.industry_02 .dataSheet {
+  position: absolute;
+  left: 12vw;
+  width: 75vw;
+  height: 440px;
+  font-size: 2rem;
+  padding: 20px;
+  z-index: 50;
+  background-color: #ddd;
+}
+.industry_02 .dataSheet .closeBtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 3.5rem;
+  color: #777;
+}
+.industry_02 .dataSheet .closeBtn:hover {
+  cursor: pointer;
+}
+.industry_02 .dataSheet .magImageWrap {
+  position: relative;
+  float: left;
+  width: 30%;
+  height: 400px;
+  background-color: #fff;
+}
+.industry_02 .dataSheet .magImageWrap span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  text-align: center;
+  color: #999;
+}
+.industry_02 .dataSheet .magImageWrap span:hover {
+  color: #000;
+  cursor: pointer;
+}
+.industry_02 .dataSheet .magImageWrap span:first-child {
+  left: 10px;
+}
+.industry_02 .dataSheet .magImageWrap span:last-child {
+  right: 10px;
+}
+.industry_02 .dataSheet .magImageWrap .magImages {
+  display: flex;
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  align-items: center;
+  object-fit: contain;
+}
+.industry_02 .dataSheet .magImageWrap .magImages img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.industry_02 .dataSheet .magImageWrap .imgController {
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+.industry_02 .dataSheet .magImageWrap .imgController label {
+  display: inline-block;
+  height: 40px;
+  font-size: 1.5rem;
+  line-height: 30px;
+  margin: 0 7px;
+  color: #999;
+}
+.industry_02 .dataSheet .magImageWrap .imgController input[type=radio]:checked + label {
+  color: #000;
+}
+.industry_02 .dataSheet .specInfoWrap {
+  display: flex;
+  float: right;
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.industry_02 .dataSheet .specInfoWrap .specWrap {
+  width: 100%;
+  height: auto;
+}
+.industry_02 .dataSheet .specInfoWrap .specWrap > p {
+  margin-bottom: 10px;
+}
+.industry_02 .dataSheet .specInfoWrap .specWrap .spec .specName {
+  float: left;
+  width: 50%;
+}
+.industry_02 .dataSheet .specInfoWrap .specWrap .spec .specValue {
+  float: right;
+  width: 50%;
+}
+.industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap {
+  width: 100%;
+  height: auto;
+}
+.industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downName {
+  float: left;
+  width: 50%;
+}
+.industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink {
+  float: right;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink a {
+  display: inline-block;
+  text-align: right;
+}
+.industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink img {
+  margin: 0;
+  width: 23px;
+  height: 23px;
+  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+}
+.click-block {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* aegid */
+.industry_03 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.industry_03 .bg_industry03 {
+  background: url(../img/slide_show_03.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.industry_03 .aeg_Info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  background-color: #eee;
+}
+.industry_03 .aeg_Info .aeg_infoText {
+  display: flex;
+  padding-right: 40px;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+.industry_03 .aeg_Info .aeg_infoImg {
+  width: 30%;
+  object-fit: contain;
+}
+.industry_03 .aeg_Rfid01 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.industry_03 .aeg_Rfid01 > li {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.industry_03 .aeg_Rfid01 > li img {
+  height: 185px;
+  object-fit: contain;
+}
+.industry_03 .aeg_Rfid01 > li p {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .product_indu {
+    margin-bottom: 10px;
+  }
+  .product_indu img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  .product_indu > h3 {
+    font-size: 2rem;
+    text-align: right;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .product_indu > p > span {
+    font-size: 4rem;
+  }
+
+  /* layout */
+  .industry_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .industry_01 .bg_industry01 {
+    background: url(../img/teledyne_main_02.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .industry_01 .tele_Info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .industry_01 .tele_Info .tele_infoText {
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .industry_01 .tele_Info .tele_infoImg {
+    width: 100%;
+    object-fit: contain;
+  }
+  .industry_01 .tele_Con01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .industry_01 .tele_Con01 > li {
+    display: inline-block;
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #eee;
+    margin: 0 15px;
+    margin-bottom: 30px;
+  }
+  .industry_01 .tele_Con01 > li > p {
+    font-size: 1.5rem;
+  }
+
+  /* goudsmit */
+  .industry_02 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .industry_02 .bg_industry02 {
+    background: url(../img/goudsmit_main_01.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .industry_02 .goud_Info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .industry_02 .goud_Info .goud_infoText {
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .industry_02 .goud_Info .goud_infoImg {
+    width: 100%;
+    object-fit: contain;
+  }
+  .industry_02 .goud_Mag01,
+.industry_02 .goud_Mag02 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .industry_02 .goud_Mag01 > li,
+.industry_02 .goud_Mag02 > li {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #eee;
+    margin: 0 15px;
+    margin-bottom: 30px;
+  }
+  .industry_02 .goud_Mag01 > li > img,
+.industry_02 .goud_Mag02 > li > img {
+    height: 100px;
+    object-fit: contain;
+  }
+  .industry_02 .goud_Mag01 > li > p,
+.industry_02 .goud_Mag02 > li > p {
+    font-size: 1.5rem;
+  }
+  .industry_02 .goud_Mag01 > li:hover .selectMag {
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(0, 90, 255, 0.6);
+  }
+  .industry_02 .goud_Mag02 > li {
+    height: auto;
+  }
+  .industry_02 .selectMag {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+  }
+  .industry_02 .selectMag h3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90px;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
+  }
+  .industry_02 .dataSheet {
+    position: absolute;
+    left: 12vw;
+    width: 75vw;
+    height: 600px;
+    font-size: 2rem;
+    padding: 10px;
+    z-index: 50;
+    background-color: #ddd;
+  }
+  .industry_02 .dataSheet .closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 3.5rem;
+    color: #777;
+  }
+  .industry_02 .dataSheet .closeBtn:hover {
+    cursor: pointer;
+  }
+  .industry_02 .dataSheet .magImageWrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+  }
+  .industry_02 .dataSheet .magImageWrap span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    text-align: center;
+    color: #999;
+  }
+  .industry_02 .dataSheet .magImageWrap span:hover {
+    color: #000;
+    cursor: pointer;
+  }
+  .industry_02 .dataSheet .magImageWrap span:first-child {
+    left: 5px;
+  }
+  .industry_02 .dataSheet .magImageWrap span:last-child {
+    right: 5px;
+  }
+  .industry_02 .dataSheet .magImageWrap .magImages {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    align-items: center;
+    object-fit: contain;
+  }
+  .industry_02 .dataSheet .magImageWrap .magImages img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .industry_02 .dataSheet .magImageWrap .imgController {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .industry_02 .dataSheet .magImageWrap .imgController label {
+    display: inline-block;
+    height: 40px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    margin: 0 7px;
+    color: #999;
+  }
+  .industry_02 .dataSheet .magImageWrap .imgController input[type=radio]:checked + label {
+    color: #000;
+  }
+  .industry_02 .dataSheet .specInfoWrap {
+    display: flex;
+    float: right;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .industry_02 .dataSheet .specInfoWrap h3 {
+    font-size: 2rem;
+  }
+  .industry_02 .dataSheet .specInfoWrap .specWrap {
+    width: 100%;
+    height: auto;
+  }
+  .industry_02 .dataSheet .specInfoWrap .specWrap > p {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .industry_02 .dataSheet .specInfoWrap .specWrap .spec p {
+    font-size: 1.5rem;
+  }
+  .industry_02 .dataSheet .specInfoWrap .specWrap .spec p b {
+    font-size: 1.5rem;
+  }
+  .industry_02 .dataSheet .specInfoWrap .specWrap .spec .specName {
+    float: left;
+    width: 50%;
+  }
+  .industry_02 .dataSheet .specInfoWrap .specWrap .spec .specValue {
+    float: right;
+    width: 50%;
+  }
+  .industry_02 .dataSheet .specInfoWrap .specWrap .spec .specValue p {
+    text-align: right;
+  }
+  .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap {
+    width: 100%;
+    height: auto;
+  }
+  .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downName {
+    float: left;
+    width: 50%;
+  }
+  .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downName p {
+    font-size: 1.5rem;
+  }
+  .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink {
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink a {
+    display: inline-block;
+    text-align: right;
+  }
+  .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink img {
+    margin: 0;
+    width: 23px;
+    height: 23px;
+    filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+  }
+  .click-block {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* aegid */
+  .industry_03 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  .industry_03 .bg_industry03 {
+    background: url(../img/slide_show_03.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .industry_03 .aeg_Info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    background-color: #eee;
+  }
+  .industry_03 .aeg_Info .aeg_infoText {
+    display: flex;
+    padding-right: 40px;
+    font-size: 1.5rem;
+    line-height: 3.3rem;
+  }
+  .industry_03 .aeg_Info .aeg_infoImg {
+    width: 100%;
+    object-fit: contain;
+  }
+  .industry_03 .aeg_Rfid01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .industry_03 .aeg_Rfid01 > li {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #eee;
+    margin: 0 15px;
+    margin-bottom: 30px;
+  }
+  .industry_03 .aeg_Rfid01 > li img {
+    height: 100px;
+    object-fit: contain;
+  }
+  .industry_03 .aeg_Rfid01 > li p {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=sub_02_Industry.css.map */

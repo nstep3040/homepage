@@ -1,0 +1,105 @@
+@import "./reset.scss";
+@import "./head.scss";
+@import "./footer.scss";
+@import "./backgroundImage.scss";
+@import "./sub_01_Company.scss";
+@import "./sub_02_Industry.scss";
+@import "./sub_03_IT.scss";
+@import "./sub_04_Software.scss";
+@import "./sub_05_Download.scss";
+@import "./sub_06_Contact.scss";
+@import "./index.scss";
+
+.boundaryBar {
+  margin-bottom: 20px;
+
+  & > h2 {
+    display: inline-block;
+    height: 100%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    border-bottom: 3px solid rgb(90, 90, 253);
+  }
+}
+.goDownload {
+  margin-bottom: 50px;
+  color: #000;
+
+  & > h2 > a {
+    color: #000;
+    font-size: 3rem;
+
+    &::after {
+      display: block;
+      content: "";
+      border-bottom: 3px solid rgb(90, 90, 253);
+      transform: scaleX(0);
+      transition: 0.3s ease;
+      transform-origin: 0% 50%;
+    }
+
+    &:hover::after {
+      transform: scaleX(0.175);
+    }
+  }
+}
+
+.openPop {
+  margin-bottom: 500px !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.underbar {
+  border-bottom: 2px solid #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .boundaryBar {
+    margin-bottom: 20px;
+
+    & > h2 {
+      display: inline-block;
+      height: 100%;
+      font-size: 2.3rem;
+      font-weight: 700;
+      border-bottom: 3px solid rgb(90, 90, 253);
+    }
+  }
+  .goDownload {
+    margin-bottom: 50px;
+    color: #000;
+
+    & > h2 > a {
+      color: #000;
+      font-size: 2.3rem;
+
+      &::after {
+        display: block;
+        content: "";
+        border-bottom: 3px solid rgb(90, 90, 253);
+        transform: scaleX(0);
+        transition: 0.3s ease;
+        transform-origin: 0% 50%;
+      }
+
+      &:hover::after {
+        transform: scaleX(0.175);
+      }
+    }
+  }
+
+  .openPop {
+    margin-bottom: 500px !important;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .underbar {
+    border-bottom: 2px solid #ccc;
+  }
+}

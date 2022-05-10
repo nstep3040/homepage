@@ -1,0 +1,71 @@
+.contact_01 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+  /* googlemap */
+}
+.contact_01 .bg_cont01 {
+  background: url(../img/directions.jpg) no-repeat;
+}
+.contact_01 .googleMap {
+  width: 100%;
+  height: 600px;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+/* googlemap end */
+/* adress */
+.adress {
+  font-size: 18px;
+}
+.adress strong {
+  display: inline-block;
+  padding: 15px 30px 15px 0;
+}
+.adress p {
+  display: inline-block;
+  min-width: 200px;
+  padding: 15px 0;
+}
+.adress > ul > li:first-child {
+  border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_01 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    /* googlemap */
+  }
+  .contact_01 .bg_cont01 {
+    background: url(../img/directions.jpg) no-repeat;
+  }
+  .contact_01 .googleMap {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    display: inline-block;
+  }
+
+  /* googlemap end */
+  /* adress */
+  .adressWrap {
+    font-size: 1.5rem;
+  }
+  .adressWrap .adress strong {
+    display: inline-block;
+    padding: 15px 30px 5px 0;
+  }
+  .adressWrap .adress p {
+    display: block;
+    min-width: 200px;
+    padding: 0;
+  }
+  .adressWrap .adress > ul > li:first-child {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/*# sourceMappingURL=sub_06_Contact.css.map */
