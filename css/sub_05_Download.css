@@ -1,3 +1,122 @@
+.downloadBoard table {
+  width: 60vw;
+  height: 400px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: start;
+}
+.downloadBoard table tbody {
+  display: none;
+}
+.downloadBoard table tbody tr {
+  height: 60px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.downloadBoard table tbody tr:first-child {
+  border-top: 2px solid #333;
+}
+.downloadBoard table tbody tr td {
+  border: 1px solid #999;
+  border-left: none;
+  border-right: none;
+  padding: 0 10px;
+}
+.downloadBoard table tbody tr td a {
+  color: #000;
+}
+.downloadBoard table tbody tr td a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.downloadBoard table tfoot tr {
+  height: 40px;
+  font-size: 1.8rem;
+}
+.downloadBoard table tfoot tr td {
+  width: 60vw;
+  text-align: center;
+  border: none;
+}
+.downloadBoard table tfoot tr td button {
+  all: unset;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.5rem;
+  border-radius: 1px;
+  background-color: #eee;
+}
+.downloadBoard table tfoot tr td button:hover {
+  cursor: pointer;
+}
+.downloadBoard table .boardShow {
+  display: block;
+}
+.downloadBoard table .boardShow td {
+  width: 60vw;
+}
+.downloadBoard table .boardSelect {
+  color: #fff;
+  background-color: #555;
+}
+
+.downloadPost > a {
+  display: block;
+  width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #000;
+}
+.downloadPost > a:hover {
+  font-weight: 700;
+}
+.downloadPost table {
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: start;
+}
+.downloadPost table thead {
+  position: relative;
+  height: 90px;
+  border-top: 2px solid #333;
+}
+.downloadPost table thead tr td {
+  padding: 0 20px;
+}
+.downloadPost table thead tr td span {
+  font-size: 2rem;
+}
+.downloadPost table thead tr td a {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #000;
+}
+.downloadPost table thead tr td a > img {
+  height: 1.6rem;
+}
+.downloadPost table tbody {
+  position: relative;
+}
+.downloadPost table tbody tr {
+  min-height: 500px;
+  font-size: 1.8rem;
+}
+.downloadPost table tbody tr td {
+  border: 1px solid #999;
+  border-left: none;
+  border-right: none;
+  padding: 20px 40px;
+}
+.downloadPost table tbody tr td img {
+  height: 400px;
+}
+
 .download {
   padding: 30px 0;
   margin-bottom: 10px;

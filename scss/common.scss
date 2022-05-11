@@ -49,7 +49,7 @@
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .underbar {
@@ -93,10 +93,6 @@
 
   .openPop {
     margin-bottom: 500px !important;
-  }
-
-  .hidden {
-    display: none;
   }
 
   .underbar {
