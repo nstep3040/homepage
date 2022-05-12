@@ -93,19 +93,20 @@ $listBackground: #eee;
       font-weight: 700;
     }
   }
-  table {
+  & > table {
     width: 60vw;
     height: auto;
     margin: 0 auto;
     border-collapse: collapse;
     text-align: start;
 
-    thead {
+    & > thead {
       position: relative;
       height: 90px;
       border-top: 2px solid #333;
-      tr {
-        td {
+
+      & > tr {
+        & > td {
           padding: 0 20px;
 
           span {
@@ -121,20 +122,29 @@ $listBackground: #eee;
 
             & > img {
               height: 1.6rem;
+              filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+            }
+
+            &:hover {
+              font-weight: 700;
+
+              & > img {
+                filter: none;
+              }
             }
           }
         }
       }
     }
 
-    tbody {
+    & > tbody {
       position: relative;
 
-      tr {
+      & > tr {
         min-height: 500px;
         font-size: 1.8rem;
 
-        td {
+        & > td {
           border: 1px solid #999;
           border-left: none;
           border-right: none;
@@ -142,6 +152,138 @@ $listBackground: #eee;
 
           img {
             height: 400px;
+          }
+
+          .goud-datasheet {
+            width: 100%;
+            border: 2px solid #000;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 1.8rem;
+
+            th {
+              height: 40px;
+              border: 1px solid #000;
+              background-color: #aaa;
+              color: #fff;
+              font-weight: 700;
+            }
+
+            td {
+              height: 50px;
+              border: 1px solid #000;
+
+              &:nth-child(1) {
+                width: 25%;
+              }
+
+              &:nth-child(2) {
+                width: 20%;
+              }
+
+              &:nth-child(3) {
+                width: 17.5%;
+              }
+
+              &:nth-child(4) {
+                width: 12.5%;
+              }
+
+              &:nth-child(5) {
+                width: 12.5%;
+              }
+
+              &:nth-child(6) {
+                width: 12.5%;
+              }
+            }
+
+            thead {
+              height: 70px;
+
+              &:first-child {
+                tr {
+                  th {
+                    background-color: #ddd;
+                    color: #000;
+                  }
+                }
+              }
+            }
+
+            img {
+              width: 25px;
+              height: 25px;
+              margin: 0;
+              margin-bottom: 3px;
+              vertical-align: middle;
+              filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+
+              &:hover {
+                filter: none;
+              }
+            }
+          }
+
+          .goud-datasheet-clean {
+            width: 100%;
+            border: 2px solid #000;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 1.8rem;
+
+            th {
+              height: 40px;
+              border: 1px solid #000;
+              background-color: #aaa;
+              color: #fff;
+              font-weight: 700;
+            }
+
+            td {
+              height: 50px;
+              border: 1px solid #000;
+
+              &:nth-child(1) {
+                width: 60%;
+              }
+
+              &:nth-child(2) {
+                width: 13%;
+              }
+
+              &:nth-child(3) {
+                width: 13%;
+              }
+
+              &:nth-child(4) {
+                width: 13%;
+              }
+            }
+
+            thead {
+              &:first-child {
+                tr {
+                  th {
+                    background-color: #ddd;
+                    color: #000;
+                  }
+                }
+              }
+            }
+
+            img {
+              width: 25px;
+              height: 25px;
+              margin: 0;
+              margin-bottom: 3px;
+              vertical-align: middle;
+              filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+
+              &:hover {
+                filter: none;
+              }
+            }
           }
         }
       }
@@ -216,146 +358,6 @@ $listBackground: #eee;
           filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
         }
       }
-    }
-  }
-}
-
-/* table */
-.goud-datasheet-text {
-  font-size: 2.5rem;
-  margin-left: 20px;
-  color: #666;
-}
-.goud-datasheet {
-  width: 800px;
-  border: 2px solid #000;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-left: 20px;
-  margin-bottom: 50px;
-
-  th {
-    height: 40px;
-    border: 1px solid #000;
-    background-color: #aaa;
-    color: #fff;
-    font-weight: 700;
-  }
-
-  td {
-    height: 40px;
-    border: 1px solid #000;
-
-    &:nth-child(1) {
-      width: 18%;
-    }
-
-    &:nth-child(2) {
-      width: 19%;
-    }
-
-    &:nth-child(3) {
-      width: 21%;
-    }
-
-    &:nth-child(4) {
-      width: 14%;
-    }
-
-    &:nth-child(5) {
-      @extend :nth-child(4);
-    }
-
-    &:nth-child(6) {
-      @extend :nth-child(4);
-    }
-  }
-
-  thead {
-    &:first-child {
-      tr {
-        th {
-          background-color: #ddd;
-          color: #000;
-        }
-      }
-    }
-  }
-
-  img {
-    width: 25px;
-    height: 25px;
-    margin: 0;
-    margin-bottom: 3px;
-    vertical-align: middle;
-    filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
-
-    &:hover {
-      filter: none;
-    }
-  }
-}
-
-.goud-datasheet-clean {
-  width: 800px;
-  border: 2px solid #000;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-left: 20px;
-  margin-bottom: 50px;
-
-  th {
-    height: 40px;
-    border: 1px solid #000;
-    background-color: #aaa;
-    color: #fff;
-    font-weight: 700;
-  }
-
-  td {
-    height: 40px;
-    border: 1px solid #000;
-
-    &:nth-child(1) {
-      width: 60%;
-    }
-
-    &:nth-child(2) {
-      width: 13%;
-    }
-
-    &:nth-child(3) {
-      width: 13%;
-    }
-
-    &:nth-child(4) {
-      width: 13%;
-    }
-  }
-
-  thead {
-    &:first-child {
-      tr {
-        th {
-          background-color: #ddd;
-          color: #000;
-        }
-      }
-    }
-  }
-
-  img {
-    width: 25px;
-    height: 25px;
-    margin: 0;
-    margin-bottom: 3px;
-    vertical-align: middle;
-    filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
-
-    &:hover {
-      filter: none;
     }
   }
 }
@@ -482,11 +484,11 @@ $listBackground: #eee;
       }
 
       &:nth-child(5) {
-        @extend :nth-child(4);
+        width: 14%;
       }
 
       &:nth-child(6) {
-        @extend :nth-child(4);
+        width: 14%;
       }
     }
 

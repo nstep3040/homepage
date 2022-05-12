@@ -1,11 +1,11 @@
 .footer {
+  display: flex;
+  justify-content: center;
   width: 100vw;
   height: 80px;
   background-color: #ccc;
 }
 .footer .f_info {
-  margin: 0 auto;
-  width: 550px;
   height: 100%;
 }
 .footer .f_info .f_logo {
@@ -22,21 +22,20 @@
 }
 .footer .f_info .f_text p {
   font-weight: 500;
-  font-size: 11px;
+  font-size: 1.3rem;
   line-height: 20px;
   color: #555;
 }
 
 @media screen and (max-width: 767px) {
   .footer {
+    display: flex;
     width: 100vw;
     height: 80px;
     background-color: #ccc;
   }
   .footer .f_info {
-    display: flex;
     margin: 0 auto;
-    width: 90%;
     height: 100%;
   }
   .footer .f_info .f_logo {

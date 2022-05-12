@@ -72,49 +72,155 @@
 .downloadPost > a:hover {
   font-weight: 700;
 }
-.downloadPost table {
+.downloadPost > table {
   width: 60vw;
   height: auto;
   margin: 0 auto;
   border-collapse: collapse;
   text-align: start;
 }
-.downloadPost table thead {
+.downloadPost > table > thead {
   position: relative;
   height: 90px;
   border-top: 2px solid #333;
 }
-.downloadPost table thead tr td {
+.downloadPost > table > thead > tr > td {
   padding: 0 20px;
 }
-.downloadPost table thead tr td span {
+.downloadPost > table > thead > tr > td span {
   font-size: 2rem;
 }
-.downloadPost table thead tr td a {
+.downloadPost > table > thead > tr > td a {
   position: absolute;
   top: 28px;
   right: 20px;
   font-size: 1.8rem;
   color: #000;
 }
-.downloadPost table thead tr td a > img {
+.downloadPost > table > thead > tr > td a > img {
   height: 1.6rem;
+  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
 }
-.downloadPost table tbody {
+.downloadPost > table > thead > tr > td a:hover {
+  font-weight: 700;
+}
+.downloadPost > table > thead > tr > td a:hover > img {
+  filter: none;
+}
+.downloadPost > table > tbody {
   position: relative;
 }
-.downloadPost table tbody tr {
+.downloadPost > table > tbody > tr {
   min-height: 500px;
   font-size: 1.8rem;
 }
-.downloadPost table tbody tr td {
+.downloadPost > table > tbody > tr > td {
   border: 1px solid #999;
   border-left: none;
   border-right: none;
   padding: 20px 40px;
 }
-.downloadPost table tbody tr td img {
+.downloadPost > table > tbody > tr > td img {
   height: 400px;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet {
+  width: 100%;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet th {
+  height: 40px;
+  border: 1px solid #000;
+  background-color: #aaa;
+  color: #fff;
+  font-weight: 700;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet td {
+  height: 50px;
+  border: 1px solid #000;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet td:nth-child(1) {
+  width: 25%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet td:nth-child(2) {
+  width: 20%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet td:nth-child(3) {
+  width: 17.5%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet td:nth-child(4) {
+  width: 12.5%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet td:nth-child(5) {
+  width: 12.5%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet td:nth-child(6) {
+  width: 12.5%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet thead {
+  height: 70px;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet thead:first-child tr th {
+  background-color: #ddd;
+  color: #000;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet img {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet img:hover {
+  filter: none;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean {
+  width: 100%;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean th {
+  height: 40px;
+  border: 1px solid #000;
+  background-color: #aaa;
+  color: #fff;
+  font-weight: 700;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean td {
+  height: 50px;
+  border: 1px solid #000;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean td:nth-child(1) {
+  width: 60%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean td:nth-child(2) {
+  width: 13%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean td:nth-child(3) {
+  width: 13%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean td:nth-child(4) {
+  width: 13%;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean thead:first-child tr th {
+  background-color: #ddd;
+  color: #000;
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean img {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+}
+.downloadPost > table > tbody > tr > td .goud-datasheet-clean img:hover {
+  filter: none;
 }
 
 .download {
@@ -176,109 +282,6 @@
   margin: 0;
   margin-left: 10px;
   filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
-}
-
-/* table */
-.goud-datasheet-text {
-  font-size: 2.5rem;
-  margin-left: 20px;
-  color: #666;
-}
-
-.goud-datasheet {
-  width: 800px;
-  border: 2px solid #000;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-left: 20px;
-  margin-bottom: 50px;
-}
-.goud-datasheet th {
-  height: 40px;
-  border: 1px solid #000;
-  background-color: #aaa;
-  color: #fff;
-  font-weight: 700;
-}
-.goud-datasheet td {
-  height: 40px;
-  border: 1px solid #000;
-}
-.goud-datasheet td:nth-child(1) {
-  width: 18%;
-}
-.goud-datasheet td:nth-child(2) {
-  width: 19%;
-}
-.goud-datasheet td:nth-child(3) {
-  width: 21%;
-}
-.goud-datasheet td:nth-child(4), .goud-datasheet td:nth-child(6), .goud-datasheet td:nth-child(5) {
-  width: 14%;
-}
-.goud-datasheet thead:first-child tr th {
-  background-color: #ddd;
-  color: #000;
-}
-.goud-datasheet img {
-  width: 25px;
-  height: 25px;
-  margin: 0;
-  margin-bottom: 3px;
-  vertical-align: middle;
-  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
-}
-.goud-datasheet img:hover {
-  filter: none;
-}
-
-.goud-datasheet-clean {
-  width: 800px;
-  border: 2px solid #000;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-left: 20px;
-  margin-bottom: 50px;
-}
-.goud-datasheet-clean th {
-  height: 40px;
-  border: 1px solid #000;
-  background-color: #aaa;
-  color: #fff;
-  font-weight: 700;
-}
-.goud-datasheet-clean td {
-  height: 40px;
-  border: 1px solid #000;
-}
-.goud-datasheet-clean td:nth-child(1) {
-  width: 60%;
-}
-.goud-datasheet-clean td:nth-child(2) {
-  width: 13%;
-}
-.goud-datasheet-clean td:nth-child(3) {
-  width: 13%;
-}
-.goud-datasheet-clean td:nth-child(4), .goud-datasheet-clean .goud-datasheet td:nth-child(5), .goud-datasheet .goud-datasheet-clean td:nth-child(5), .goud-datasheet-clean .goud-datasheet td:nth-child(6), .goud-datasheet .goud-datasheet-clean td:nth-child(6) {
-  width: 13%;
-}
-.goud-datasheet-clean thead:first-child tr th {
-  background-color: #ddd;
-  color: #000;
-}
-.goud-datasheet-clean img {
-  width: 25px;
-  height: 25px;
-  margin: 0;
-  margin-bottom: 3px;
-  vertical-align: middle;
-  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
-}
-.goud-datasheet-clean img:hover {
-  filter: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -380,7 +383,13 @@
   .goud-datasheet td:nth-child(3) {
     width: 21%;
   }
-  .goud-datasheet td:nth-child(4), .goud-datasheet td:nth-child(5), .goud-datasheet td:nth-child(6) {
+  .goud-datasheet td:nth-child(4) {
+    width: 14%;
+  }
+  .goud-datasheet td:nth-child(5) {
+    width: 14%;
+  }
+  .goud-datasheet td:nth-child(6) {
     width: 14%;
   }
   .goud-datasheet thead:first-child tr th {
@@ -428,7 +437,7 @@
   .goud-datasheet-clean td:nth-child(3) {
     width: 13%;
   }
-  .goud-datasheet-clean td:nth-child(4), .goud-datasheet-clean .goud-datasheet td:nth-child(5), .goud-datasheet .goud-datasheet-clean td:nth-child(5), .goud-datasheet-clean .goud-datasheet td:nth-child(6), .goud-datasheet .goud-datasheet-clean td:nth-child(6) {
+  .goud-datasheet-clean td:nth-child(4) {
     width: 13%;
   }
   .goud-datasheet-clean thead:first-child tr th {
