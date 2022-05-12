@@ -1,4 +1,5 @@
 $listBackground: #eee;
+$mainBottomMargin: 200;
 
 .downloadBoard {
   table {
@@ -316,7 +317,7 @@ $listBackground: #eee;
 .down_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: $mainBottomMargin + px;
 
   // background image
   .bg_down01 {
@@ -394,7 +395,7 @@ $listBackground: #eee;
   .down_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: $mainBottomMargin + px;
 
     // background image
     .bg_down01 {

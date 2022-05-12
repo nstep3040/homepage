@@ -78,7 +78,7 @@
 .it_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .it_01 .bg_it01 {
   background: url(../img/pc_main_01.jpg) no-repeat;
@@ -109,7 +109,7 @@
 .it_02 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .it_02 .bg_it02 {
   background: url(../img/it_device_main_02.jpg) no-repeat;
@@ -141,7 +141,7 @@
 .it_03 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .it_03 .bg_it03 {
   background: url(../img/smart_solution.jpg) no-repeat;
@@ -384,7 +384,7 @@
   .it_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .it_01 .bg_it01 {
     background: url(../img/pc_main_01.jpg) no-repeat;
@@ -415,7 +415,7 @@
   .it_02 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .it_02 .bg_it02 {
     background: url(../img/it_device_main_02.jpg) no-repeat;
@@ -449,7 +449,7 @@
   .it_03 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .it_03 .bg_it03 {
     background: url(../img/smart_solution.jpg) no-repeat;

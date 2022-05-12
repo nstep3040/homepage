@@ -23,6 +23,7 @@
 .wrap {
   position: relative;
   width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -465,6 +466,8 @@ html {
   }
 }
 .footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -541,7 +544,7 @@ html {
 .company_01 {
   width: 100vw;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .company_01 .bg_com01 {
   background: url(../img/company_back.jpg) no-repeat;
@@ -600,7 +603,7 @@ html {
   .company_01 {
     width: 100vw;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .company_01 .bg_com01 {
     background: url(../img/company_back.jpg) no-repeat;
@@ -683,7 +686,7 @@ html {
 .industry_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .industry_01 .bg_industry01 {
   background: url(../img/teledyne_main_02.png) no-repeat;
@@ -709,12 +712,23 @@ html {
   width: 30%;
   object-fit: contain;
 }
-.industry_01 .tele_Con01 {
+.industry_01 .underwaterBtns button {
+  all: unset;
+  width: auto;
+  height: auto;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 10px;
+}
+.industry_01 .teleConWrap .tele_Con01 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.industry_01 .tele_Con01 > li {
+.industry_01 .teleConWrap .tele_Con01 > li {
   display: inline-block;
   width: 200px;
   height: auto;
@@ -726,7 +740,7 @@ html {
   margin: 0 15px;
   margin-bottom: 30px;
 }
-.industry_01 .tele_Con01 > li > p {
+.industry_01 .teleConWrap .tele_Con01 > li > p {
   font-size: 1.8rem;
 }
 
@@ -734,7 +748,7 @@ html {
 .industry_02 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .industry_02 .bg_industry02 {
   background: url(../img/goudsmit_main_01.png) no-repeat;
@@ -952,7 +966,7 @@ html {
 .industry_03 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .industry_03 .bg_industry03 {
   background: url(../img/slide_show_03.png) no-repeat;
@@ -1033,7 +1047,7 @@ html {
   .industry_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .industry_01 .bg_industry01 {
     background: url(../img/teledyne_main_02.png) no-repeat;
@@ -1084,7 +1098,7 @@ html {
   .industry_02 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .industry_02 .bg_industry02 {
     background: url(../img/goudsmit_main_01.png) no-repeat;
@@ -1318,7 +1332,7 @@ html {
   .industry_03 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .industry_03 .bg_industry03 {
     background: url(../img/slide_show_03.png) no-repeat;
@@ -1450,7 +1464,7 @@ html {
 .it_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .it_01 .bg_it01 {
   background: url(../img/pc_main_01.jpg) no-repeat;
@@ -1481,7 +1495,7 @@ html {
 .it_02 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .it_02 .bg_it02 {
   background: url(../img/it_device_main_02.jpg) no-repeat;
@@ -1513,7 +1527,7 @@ html {
 .it_03 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .it_03 .bg_it03 {
   background: url(../img/smart_solution.jpg) no-repeat;
@@ -1756,7 +1770,7 @@ html {
   .it_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .it_01 .bg_it01 {
     background: url(../img/pc_main_01.jpg) no-repeat;
@@ -1787,7 +1801,7 @@ html {
   .it_02 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .it_02 .bg_it02 {
     background: url(../img/it_device_main_02.jpg) no-repeat;
@@ -1821,7 +1835,7 @@ html {
   .it_03 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .it_03 .bg_it03 {
     background: url(../img/smart_solution.jpg) no-repeat;
@@ -2039,7 +2053,7 @@ html {
 .software_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .software_01 .bg_software01 {
   background: url(../img/software_main_01.jpg) no-repeat;
@@ -2070,7 +2084,7 @@ html {
 .software_02 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .software_02 .bg_software02 {
   background: url(../img/software_main_01.jpg) no-repeat;
@@ -2178,7 +2192,7 @@ html {
   .software_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .software_01 .bg_software01 {
     background: url(../img/software_main_01.jpg) no-repeat;
@@ -2208,7 +2222,7 @@ html {
   .software_02 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .software_02 .bg_software02 {
     background: url(../img/software_main_01.jpg) no-repeat;
@@ -2482,7 +2496,7 @@ html {
 .down_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .down_01 .bg_down01 {
   background: url(../img/download.jpg) no-repeat;
@@ -2545,7 +2559,7 @@ html {
   .down_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .down_01 .bg_down01 {
     background: url(../img/download.jpg) no-repeat;
@@ -2696,7 +2710,7 @@ html {
 .contact_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   /* googlemap */
 }
 .contact_01 .bg_cont01 {
@@ -2731,7 +2745,7 @@ html {
   .contact_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     /* googlemap */
   }
   .contact_01 .bg_cont01 {
@@ -2808,7 +2822,7 @@ html {
   width: 80vw;
   height: 300px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   overflow: hidden;
   text-align: center;
   background-color: #fff;

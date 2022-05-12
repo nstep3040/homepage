@@ -26,7 +26,7 @@
 .industry_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .industry_01 .bg_industry01 {
   background: url(../img/teledyne_main_02.png) no-repeat;
@@ -52,12 +52,23 @@
   width: 30%;
   object-fit: contain;
 }
-.industry_01 .tele_Con01 {
+.industry_01 .underwaterBtns button {
+  all: unset;
+  width: auto;
+  height: auto;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 10px;
+}
+.industry_01 .teleConWrap .tele_Con01 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.industry_01 .tele_Con01 > li {
+.industry_01 .teleConWrap .tele_Con01 > li {
   display: inline-block;
   width: 200px;
   height: auto;
@@ -69,7 +80,7 @@
   margin: 0 15px;
   margin-bottom: 30px;
 }
-.industry_01 .tele_Con01 > li > p {
+.industry_01 .teleConWrap .tele_Con01 > li > p {
   font-size: 1.8rem;
 }
 
@@ -77,7 +88,7 @@
 .industry_02 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .industry_02 .bg_industry02 {
   background: url(../img/goudsmit_main_01.png) no-repeat;
@@ -295,7 +306,7 @@
 .industry_03 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .industry_03 .bg_industry03 {
   background: url(../img/slide_show_03.png) no-repeat;
@@ -376,7 +387,7 @@
   .industry_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .industry_01 .bg_industry01 {
     background: url(../img/teledyne_main_02.png) no-repeat;
@@ -427,7 +438,7 @@
   .industry_02 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .industry_02 .bg_industry02 {
     background: url(../img/goudsmit_main_01.png) no-repeat;
@@ -661,7 +672,7 @@
   .industry_03 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .industry_03 .bg_industry03 {
     background: url(../img/slide_show_03.png) no-repeat;

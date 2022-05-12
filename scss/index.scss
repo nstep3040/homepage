@@ -1,3 +1,5 @@
+$mainBottomMargin: 200;
+
 // desktop
 .contents {
   position: relative;
@@ -51,7 +53,7 @@
     width: 80vw;
     height: 300px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: $mainBottomMargin + px;
     overflow: hidden;
     text-align: center;
     background-color: #fff;

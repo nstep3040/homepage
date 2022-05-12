@@ -1,7 +1,7 @@
 .company_01 {
   width: 100vw;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .company_01 .bg_com01 {
   background: url(../img/company_back.jpg) no-repeat;
@@ -60,7 +60,7 @@
   .company_01 {
     width: 100vw;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .company_01 .bg_com01 {
     background: url(../img/company_back.jpg) no-repeat;

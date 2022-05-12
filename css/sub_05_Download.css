@@ -245,7 +245,7 @@
 .down_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 .down_01 .bg_down01 {
   background: url(../img/download.jpg) no-repeat;
@@ -308,7 +308,7 @@
   .down_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .down_01 .bg_down01 {
     background: url(../img/download.jpg) no-repeat;

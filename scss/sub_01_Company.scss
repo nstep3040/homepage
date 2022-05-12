@@ -1,7 +1,9 @@
+$mainBottomMargin: 200;
+
 .company_01 {
   width: 100vw;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: $mainBottomMargin + px;
 
   // background image
   .bg_com01 {
@@ -85,7 +87,7 @@
   .company_01 {
     width: 100vw;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: $mainBottomMargin + px;
 
     // background image
     .bg_com01 {

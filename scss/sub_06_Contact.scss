@@ -1,7 +1,9 @@
+$mainBottomMargin: 200;
+
 .contact_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: $mainBottomMargin + px;
 
   // background image
   .bg_cont01 {
@@ -51,7 +53,7 @@
   .contact_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: $mainBottomMargin + px;
 
     // background image
     .bg_cont01 {

@@ -1,4 +1,5 @@
 $listBackground: #eee;
+$mainBottomMargin: 200;
 
 .product_soft {
   margin-bottom: 10px;
@@ -89,7 +90,7 @@ $listBackground: #eee;
 .software_01 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: $mainBottomMargin + px;
 
   // background image
   .bg_software01 {
@@ -125,7 +126,7 @@ $listBackground: #eee;
 .software_02 {
   width: 100%;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: $mainBottomMargin + px;
 
   // background image
   .bg_software02 {
@@ -253,7 +254,7 @@ $listBackground: #eee;
   .software_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: $mainBottomMargin + px;
 
     // background image
     .bg_software01 {
@@ -288,7 +289,7 @@ $listBackground: #eee;
   .software_02 {
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: $mainBottomMargin + px;
 
     // background image
     .bg_software02 {
