@@ -3,6 +3,7 @@ $mainBottomMargin: 200;
 
 .main {
   width: 75vw;
+  min-height: 500px;
   margin: 0 auto;
 }
 
@@ -68,6 +69,8 @@ $mainBottomMargin: 200;
 
   // product teledyne
   .underwaterBtns {
+    margin-bottom: 20px;
+
     button {
       all: unset;
       width: auto;
@@ -78,6 +81,12 @@ $mainBottomMargin: 200;
       font-weight: 700;
       text-align: center;
       margin-right: 10px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #555;
+        color: #fff;
+      }
     }
   }
 
@@ -101,6 +110,50 @@ $mainBottomMargin: 200;
 
         & > p {
           font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .sonarWrap {
+    .sonar {
+      h3 {
+        font-size: 2.8rem;
+      }
+
+      & > li {
+        margin-bottom: 10px;
+        ul {
+          padding-left: 20px;
+          li {
+            list-style-type: disc;
+
+            p {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rovWrap {
+    .rov {
+      h3 {
+        font-size: 2.8rem;
+      }
+
+      & > li {
+        margin-bottom: 10px;
+        ul {
+          padding-left: 20px;
+          li {
+            list-style-type: disc;
+
+            p {
+              font-size: 2rem;
+            }
+          }
         }
       }
     }

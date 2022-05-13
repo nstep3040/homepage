@@ -37,9 +37,9 @@ document.write(`
                             <li>
                                 <a href="./html/sub_02_Industry_01.html">INDUSTRY</a>
                                 <ul class="subMenu">
-                                    <li><a href="./html/sub_02_Industry_01.html">수중커넥터</a></li>
-                                    <li><a href="./html/sub_02_Industry_02.html">마그네틱</a></li>
-                                    <li><a href="./html/sub_02_Industry_03.html">RFID</a></li>
+                                <li><a href="./html/sub_02_Industry_03.html">RFID</a></li>
+                                <li><a href="./html/sub_02_Industry_02.html">마그네틱</a></li>
+                                <li><a href="./html/sub_02_Industry_01.html">수중장비</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -54,7 +54,7 @@ document.write(`
                                 <a href="./html/sub_04_Software_01.html">SOFTWARE</a>
                                 <ul class="subMenu">
                                     <li><a href="./html/sub_04_Software_01.html">사무용</a></li>
-                                    <li><a href="./html/sub_04_Software_02.html">연구용</a></li>
+                                    <li><a href="./html/sub_04_Software_02.html">연구 &middot; 개발용</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -83,11 +83,11 @@ document.write(`
                     </ul>
                 </details>
                 <details>
-                    <summary>산업용</summary>
+                    <summary>INDUSTRY</summary>
                     <ul>
-                        <li><a href="./html/sub_02_Industry_01.html">수중커넥터</a></li>
-                        <li><a href="./html/sub_02_Industry_02.html">마그네틱</a></li>
-                        <li><a href="./html/sub_02_Industry_03.html">RFID</a></li>
+                    <li><a href="./html/sub_02_Industry_03.html">RFID</a></li>
+                    <li><a href="./html/sub_02_Industry_02.html">마그네틱</a></li>
+                    <li><a href="./html/sub_02_Industry_01.html">수중장비</a></li>
                     </ul>
                 </details>
                 <details>
@@ -102,7 +102,7 @@ document.write(`
                     <summary>SOFTWARE</summary>
                     <ul>
                         <li><a href="./html/sub_04_Software_01.html">사무용</a></li>
-                        <li><a href="./html/sub_04_Software_02.html">연구용</a></li>
+                        <li><a href="./html/sub_04_Software_02.html">연구 &middot; 개발용</a></li>
                     </ul>
                 </details>
                 <details>

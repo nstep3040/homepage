@@ -1,5 +1,6 @@
 .main {
   width: 75vw;
+  min-height: 500px;
   margin: 0 auto;
 }
 
@@ -52,6 +53,9 @@
   width: 30%;
   object-fit: contain;
 }
+.industry_01 .underwaterBtns {
+  margin-bottom: 20px;
+}
 .industry_01 .underwaterBtns button {
   all: unset;
   width: auto;
@@ -62,6 +66,11 @@
   font-weight: 700;
   text-align: center;
   margin-right: 10px;
+  cursor: pointer;
+}
+.industry_01 .underwaterBtns button.active {
+  background-color: #555;
+  color: #fff;
 }
 .industry_01 .teleConWrap .tele_Con01 {
   display: flex;
@@ -82,6 +91,36 @@
 }
 .industry_01 .teleConWrap .tele_Con01 > li > p {
   font-size: 1.8rem;
+}
+.industry_01 .sonarWrap .sonar h3 {
+  font-size: 2.8rem;
+}
+.industry_01 .sonarWrap .sonar > li {
+  margin-bottom: 10px;
+}
+.industry_01 .sonarWrap .sonar > li ul {
+  padding-left: 20px;
+}
+.industry_01 .sonarWrap .sonar > li ul li {
+  list-style-type: disc;
+}
+.industry_01 .sonarWrap .sonar > li ul li p {
+  font-size: 2rem;
+}
+.industry_01 .rovWrap .rov h3 {
+  font-size: 2.8rem;
+}
+.industry_01 .rovWrap .rov > li {
+  margin-bottom: 10px;
+}
+.industry_01 .rovWrap .rov > li ul {
+  padding-left: 20px;
+}
+.industry_01 .rovWrap .rov > li ul li {
+  list-style-type: disc;
+}
+.industry_01 .rovWrap .rov > li ul li p {
+  font-size: 2rem;
 }
 
 /* goudsmit */
