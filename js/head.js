@@ -43,11 +43,12 @@ document.write(`
                                 </ul>
                             </li>
                             <li>
-                                <a href="./html/sub_03_IT_01.html">IT &middot; SMART</a>
+                                <!--<a href="./html/sub_03_IT_01.html">IT &middot; SMART</a>-->
+                                <a href="./html/sub_03_IT_01.html">IT</a>
                                 <ul class="subMenu">
                                     <li><a href="./html/sub_03_IT_01.html">PC</a></li>
                                     <li><a href="./html/sub_03_IT_02.html">IT Device</a></li>
-                                    <li><a href="./html/sub_03_IT_03.html">Smart Solution</a></li>
+                                    <!--<li><a href="./html/sub_03_IT_03.html">Smart Solution</a></li>-->
                                 </ul>
                             </li>
                             <li>
@@ -91,11 +92,12 @@ document.write(`
                     </ul>
                 </details>
                 <details>
-                    <summary>IT &middot; SMART</summary>
+                    <!--<summary>IT &middot; SMART</summary>-->
+                    <summary>IT</summary>
                     <ul>
                         <li><a href="./html/sub_03_IT_01.html">PC</a></li>
                         <li><a href="./html/sub_03_IT_02.html">IT Device</a></li>
-                        <li><a href="./html/sub_03_IT_03.html">Smart Solution</a></li>
+                        <!--<li><a href="./html/sub_03_IT_03.html">Smart Solution</a></li>-->
                     </ul>
                 </details>
                 <details>
