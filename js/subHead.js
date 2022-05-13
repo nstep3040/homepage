@@ -35,7 +35,7 @@ document.write(`
                             </ul>
                         </li>
                         <li>
-                            <a href="./sub_02_Industry_01.html">INDUSTRY</a>
+                            <a href="./sub_02_Industry_03.html">INDUSTRY</a>
                             <ul class="subMenu">
                             <li><a href="./sub_02_Industry_03.html">RFID</a></li>
                             <li><a href="./sub_02_Industry_02.html">마그네틱</a></li>
