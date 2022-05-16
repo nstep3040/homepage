@@ -17,7 +17,10 @@
 /* googlemap end */
 /* adress */
 .adress {
-  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
 }
 .adress strong {
   display: inline-block;
@@ -28,7 +31,11 @@
   min-width: 200px;
   padding: 15px 0;
 }
-.adress > ul > li:first-child {
+.adress > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.adress > li:first-child {
   border-bottom: 1px solid #ccc;
 }
 

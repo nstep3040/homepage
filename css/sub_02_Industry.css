@@ -92,11 +92,40 @@
 .industry_01 .teleConWrap .tele_Con01 > li > p {
   font-size: 1.8rem;
 }
+.industry_01 .teleConWrap .teleDivision {
+  font-size: 2.8rem;
+  text-align: right;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
 .industry_01 .sonarWrap .sonar h3 {
   font-size: 2.8rem;
 }
 .industry_01 .sonarWrap .sonar > li {
+  margin-top: 30px;
   margin-bottom: 10px;
+}
+.industry_01 .sonarWrap .sonar > li:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.industry_01 .sonarWrap .sonar > li > figure {
+  display: inline-block;
+  width: auto;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+}
+.industry_01 .sonarWrap .sonar > li > figure > img {
+  height: 110px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.industry_01 .sonarWrap .sonar > li > figure > figcaption {
+  font-size: 2rem;
+  text-align: center;
+  color: #777;
 }
 .industry_01 .sonarWrap .sonar > li ul {
   padding-left: 20px;
