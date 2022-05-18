@@ -29,8 +29,9 @@
 .header > .top .topMenu .mainMenu li {
   position: relative;
   float: left;
-  width: 140px;
+  width: auto;
   height: 100%;
+  padding: 0 20px;
 }
 .header > .top .topMenu .mainMenu li > a {
   line-height: 80px;
