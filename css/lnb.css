@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.lnb {
+  display: block;
+  top: 400px;
+  right: 100px;
+  width: 200px;
+  height: auto;
+  padding: 10px 0;
+  z-index: 10;
+}
+.lnb .lnb__menu {
+  width: 100%;
+}
+.lnb .lnb__menu input {
+  display: none;
+}
+.lnb .lnb__menu input:checked + label::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotateX(180deg);
+  right: 10px;
+}
+.lnb .lnb__menu input:checked + label + ul {
+  max-height: 300px;
+}
+.lnb .lnb__menu label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-bottom: 2px solid rgb(0, 102, 229);
+}
+.lnb .lnb__menu label::after {
+  display: block;
+  position: absolute;
+  content: "⌵";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+.lnb .lnb__menu ul {
+  max-height: 0;
+  padding: 5px 0;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.lnb .lnb__menu ul > li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+}
+.lnb .lnb__menu ul > li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.lnb .lnb__menu ul > li > a {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #000;
+}
+.lnb .lnb__menu ul > li:hover > a {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=lnb.css.map */

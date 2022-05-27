@@ -11,12 +11,13 @@ const HIDDEN_INFO_CLASSNAME = "hidden";
 
 // 데이터시트 창 모두 닫기
 function closePopAll() {
-  for (let i = 0; i < productLength; i++) {
-    productList[i].classList.remove(ACTIVE_POP_CLASSNAME);
-  }
-  for (let i = 0; i < dataSheetList.length; i++) {
-    dataSheetList[i].classList.add(HIDDEN_INFO_CLASSNAME);
-  }
+  productList.forEach((element) => {
+    element.classList.remove(ACTIVE_POP_CLASSNAME);
+  });
+
+  dataSheetList.forEach((element) => {
+    element.classList.add(HIDDEN_INFO_CLASSNAME);
+  });
 }
 
 // 데이터 시트창 활성화 시 클릭 방지 창 활성화

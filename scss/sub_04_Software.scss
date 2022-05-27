@@ -34,11 +34,12 @@ $mainBottomMargin: 200;
     color: #555;
     text-align: right;
   }
+
   details {
     & > summary {
       font-size: 3rem;
       cursor: pointer;
-      margin: 10px 0;
+      margin: 20px 0;
 
       & > img {
         display: inline-block;
@@ -48,41 +49,37 @@ $mainBottomMargin: 200;
       }
     }
 
-    .samsung-logo img {
-      width: 180px;
-      height: 35px;
-    }
-    .lg-logo img {
-      width: 110px;
-      height: 50px;
-    }
-    .apple-logo img {
-      width: 50px;
-      height: 60px;
-    }
-    .hp-logo img {
-      width: 60px;
-      height: 60px;
-    }
-    .lenovo-logo img {
-      width: 155px;
-      height: 35px;
-    }
-    .dell-logo img {
-      width: 65px;
-      height: 65px;
-    }
-    .asus-logo img {
-      width: 145px;
-      height: 35px;
-    }
     .microsoft-logo img {
-      width: 170px;
+      width: 185px;
       height: 40px;
     }
-    .wacom-logo img {
-      width: 80px;
-      height: 75px;
+    .adobe-logo img {
+      width: 155px;
+      height: 40px;
+    }
+    .autodesk-logo img {
+      width: 239px;
+      height: 40px;
+    }
+    .hancom-logo img {
+      width: 112px;
+      height: 40px;
+    }
+    .ahnlab-logo img {
+      width: 160px;
+      height: 40px;
+    }
+    .originLab-logo img {
+      width: 185px;
+      height: 40px;
+    }
+    .coppelia-logo img {
+      width: 417px;
+      height: 35px;
+    }
+    .unity-logo img {
+      width: 136px;
+      height: 50px;
     }
   }
 }
@@ -91,6 +88,43 @@ $mainBottomMargin: 200;
   width: 100%;
   height: auto;
   margin-bottom: $mainBottomMargin + px;
+
+  & > .contentsWrap {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 0;
+
+    & > .main {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 30px;
+
+      & > .detail-info {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.5rem;
+        color: #555;
+        text-align: right;
+      }
+
+      .product_soft {
+        width: 49%;
+
+        &:nth-child(2) {
+          border-right: 1px solid #ccc;
+        }
+
+        & > h2 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
 
   // background image
   .bg_software01 {
@@ -103,6 +137,8 @@ $mainBottomMargin: 200;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 20px;
+    gap: 10px 20px;
 
     & > li {
       display: inline-block;
@@ -111,34 +147,19 @@ $mainBottomMargin: 200;
       padding: 10px;
       text-align: center;
       overflow: hidden;
-      border-radius: 10px;
       background-color: $listBackground;
-      margin: 0 15px;
-      margin-bottom: 30px;
 
       & > p {
         font-size: 1.8rem;
       }
     }
   }
-}
-
-.software_02 {
-  width: 100%;
-  height: auto;
-  margin-bottom: $mainBottomMargin + px;
-
-  // background image
-  .bg_software02 {
-    background: url(../img/software_main_01.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
 
   .research_01 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 20px;
 
     & > li {
       display: inline-block;
@@ -147,7 +168,6 @@ $mainBottomMargin: 200;
       padding: 10px;
       text-align: center;
       overflow: hidden;
-      border-radius: 10px;
       background-color: $listBackground;
       margin: 0 15px;
       margin-bottom: 30px;
@@ -276,26 +296,12 @@ $mainBottomMargin: 200;
         overflow: hidden;
         margin: 0 15px;
         margin-bottom: 30px;
-        border-radius: 10px;
         background-color: $listBackground;
 
         & > p {
           font-size: 1.5rem;
         }
       }
-    }
-  }
-
-  .software_02 {
-    width: 100%;
-    height: auto;
-    margin-bottom: $mainBottomMargin + px;
-
-    // background image
-    .bg_software02 {
-      background: url(../img/software_main_01.jpg) no-repeat;
-      background-size: cover;
-      background-position: center;
     }
 
     .research_01 {

@@ -1,8 +1,6 @@
 const buttons = document.querySelectorAll("#boardBtns button");
 const boards = document.querySelectorAll("#boards tbody");
 
-console.log(boards);
-
 function hideBoards() {
   boards.forEach((element) => {
     element.classList.remove("boardShow");

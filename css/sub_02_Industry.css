@@ -1,7 +1,18 @@
-.main {
-  width: 75vw;
+.contentsWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 8vw;
+}
+.contentsWrap .main {
+  width: 60vw;
   min-height: 500px;
-  margin: 0 auto;
+  padding: 10px;
+}
+.contentsWrap .main > h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .product_indu {
@@ -24,13 +35,64 @@
 }
 
 /* layout */
+.industry_home {
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+}
+.industry_home .bg_industry {
+  background: url(../img/industry.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 85%;
+}
+.industry_home > .contentsWrap {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0;
+}
+.industry_home > .contentsWrap > .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.industry_home > .contentsWrap > .main > a {
+  display: block;
+  width: 34%;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 60px 30px;
+  text-align: center;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+.industry_home > .contentsWrap > .main > a:not(:last-child) {
+  border-right: none;
+}
+.industry_home > .contentsWrap > .main > a:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+.industry_home > .contentsWrap > .main > a > img {
+  width: 80px;
+  min-height: 80px;
+  margin-bottom: 30px;
+}
+.industry_home > .contentsWrap > .main > a > h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.industry_home > .contentsWrap > .main > a > p {
+  font-size: 1.8rem;
+}
+
 .industry_01 {
   width: 100%;
   height: auto;
   margin-bottom: 200px;
 }
 .industry_01 .bg_industry01 {
-  background: url(../img/teledyne_main_02.png) no-repeat;
+  background: url(../img/underwater/underwater_main_02.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -54,12 +116,13 @@
   object-fit: contain;
 }
 .industry_01 .underwaterBtns {
+  height: 40px;
   margin-bottom: 20px;
 }
 .industry_01 .underwaterBtns button {
   all: unset;
   width: auto;
-  height: auto;
+  min-height: 40px;
   border: 1px solid #000;
   padding: 5px 10px;
   font-size: 2.5rem;
@@ -72,10 +135,33 @@
   background-color: #555;
   color: #fff;
 }
+.industry_01 .detail-info {
+  float: right;
+  font-size: 1.8rem;
+  color: #999;
+}
+.industry_01 .teleConWrap > summary {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.industry_01 .teleConWrap .brandLogo {
+  display: flex;
+  justify-content: center;
+}
+.industry_01 .teleConWrap .brandLogo > img {
+  width: 300px;
+  object-fit: contain;
+}
+.industry_01 .teleConWrap > .product_indu {
+  padding-left: 50px;
+}
 .industry_01 .teleConWrap .tele_Con01 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 20px 20px;
+  margin-bottom: 30px;
 }
 .industry_01 .teleConWrap .tele_Con01 > li {
   display: inline-block;
@@ -84,19 +170,22 @@
   padding: 10px;
   text-align: center;
   overflow: hidden;
-  border-radius: 10px;
   background-color: #eee;
-  margin: 0 15px;
-  margin-bottom: 30px;
 }
 .industry_01 .teleConWrap .tele_Con01 > li > p {
   font-size: 1.8rem;
 }
 .industry_01 .teleConWrap .teleDivision {
-  font-size: 2.8rem;
-  text-align: right;
-  border-bottom: 2px solid #ccc;
+  font-size: 2rem;
   margin-bottom: 20px;
+}
+.industry_01 .sonarWrap > summary {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.industry_01 .sonarWrap .sonar {
+  padding-left: 50px;
 }
 .industry_01 .sonarWrap .sonar h3 {
   font-size: 2.8rem;
@@ -136,6 +225,19 @@
 .industry_01 .sonarWrap .sonar > li ul li p {
   font-size: 2rem;
 }
+.industry_01 .rovWrap > summary {
+  font-size: 3rem;
+  cursor: pointer;
+  margin: 10px 0;
+  vertical-align: middle;
+}
+.industry_01 .rovWrap > summary > img {
+  width: 100px;
+  margin-right: 20px;
+}
+.industry_01 .rovWrap .rov {
+  padding-left: 50px;
+}
 .industry_01 .rovWrap .rov h3 {
   font-size: 2.8rem;
 }
@@ -170,7 +272,6 @@
   height: auto;
   padding: 30px;
   margin-bottom: 50px;
-  border-radius: 10px;
   background-color: #eee;
 }
 .industry_02 .goud_Info .goud_infoText {
@@ -196,7 +297,6 @@
   height: auto;
   padding: 10px;
   text-align: center;
-  border-radius: 10px;
   background-color: #eee;
   margin: 0 15px;
   margin-bottom: 30px;
@@ -213,7 +313,6 @@
 .industry_02 .goud_Mag01 > li:hover .selectMag {
   display: block;
   cursor: pointer;
-  border-radius: 10px;
   background-color: rgba(0, 90, 255, 0.6);
 }
 .industry_02 .goud_Mag02 > li {
@@ -413,7 +512,6 @@
   padding: 10px;
   text-align: center;
   overflow: hidden;
-  border-radius: 10px;
   background-color: #eee;
   margin: 0 15px;
   margin-bottom: 30px;

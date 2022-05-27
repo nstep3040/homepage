@@ -29,7 +29,7 @@
 .product_soft details > summary {
   font-size: 3rem;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .product_soft details > summary > img {
   display: inline-block;
@@ -37,47 +37,74 @@
   vertical-align: middle;
   margin: 0 !important;
 }
-.product_soft details .samsung-logo img {
-  width: 180px;
-  height: 35px;
-}
-.product_soft details .lg-logo img {
-  width: 110px;
-  height: 50px;
-}
-.product_soft details .apple-logo img {
-  width: 50px;
-  height: 60px;
-}
-.product_soft details .hp-logo img {
-  width: 60px;
-  height: 60px;
-}
-.product_soft details .lenovo-logo img {
-  width: 155px;
-  height: 35px;
-}
-.product_soft details .dell-logo img {
-  width: 65px;
-  height: 65px;
-}
-.product_soft details .asus-logo img {
-  width: 145px;
-  height: 35px;
-}
 .product_soft details .microsoft-logo img {
-  width: 170px;
+  width: 185px;
   height: 40px;
 }
-.product_soft details .wacom-logo img {
-  width: 80px;
-  height: 75px;
+.product_soft details .adobe-logo img {
+  width: 155px;
+  height: 40px;
+}
+.product_soft details .autodesk-logo img {
+  width: 239px;
+  height: 40px;
+}
+.product_soft details .hancom-logo img {
+  width: 112px;
+  height: 40px;
+}
+.product_soft details .ahnlab-logo img {
+  width: 160px;
+  height: 40px;
+}
+.product_soft details .originLab-logo img {
+  width: 185px;
+  height: 40px;
+}
+.product_soft details .coppelia-logo img {
+  width: 417px;
+  height: 35px;
+}
+.product_soft details .unity-logo img {
+  width: 136px;
+  height: 50px;
 }
 
 .software_01 {
   width: 100%;
   height: auto;
   margin-bottom: 200px;
+}
+.software_01 > .contentsWrap {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0;
+}
+.software_01 > .contentsWrap > .main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 30px;
+}
+.software_01 > .contentsWrap > .main > .detail-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: #555;
+  text-align: right;
+}
+.software_01 > .contentsWrap > .main .product_soft {
+  width: 49%;
+}
+.software_01 > .contentsWrap > .main .product_soft:nth-child(2) {
+  border-right: 1px solid #ccc;
+}
+.software_01 > .contentsWrap > .main .product_soft > h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 .software_01 .bg_software01 {
   background: url(../img/software_main_01.jpg) no-repeat;
@@ -88,6 +115,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-left: 20px;
+  gap: 10px 20px;
 }
 .software_01 .office_01 > li {
   display: inline-block;
@@ -96,43 +125,29 @@
   padding: 10px;
   text-align: center;
   overflow: hidden;
-  border-radius: 10px;
   background-color: #eee;
-  margin: 0 15px;
-  margin-bottom: 30px;
 }
 .software_01 .office_01 > li > p {
   font-size: 1.8rem;
 }
-
-.software_02 {
-  width: 100%;
-  height: auto;
-  margin-bottom: 200px;
-}
-.software_02 .bg_software02 {
-  background: url(../img/software_main_01.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.software_02 .research_01 {
+.software_01 .research_01 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-left: 20px;
 }
-.software_02 .research_01 > li {
+.software_01 .research_01 > li {
   display: inline-block;
   width: 200px;
   height: auto;
   padding: 10px;
   text-align: center;
   overflow: hidden;
-  border-radius: 10px;
   background-color: #eee;
   margin: 0 15px;
   margin-bottom: 30px;
 }
-.software_02 .research_01 > li > p {
+.software_01 .research_01 > li > p {
   font-size: 1.8rem;
 }
 
@@ -236,29 +251,17 @@
     overflow: hidden;
     margin: 0 15px;
     margin-bottom: 30px;
-    border-radius: 10px;
     background-color: #eee;
   }
   .software_01 .office_01 > li > p {
     font-size: 1.5rem;
   }
-
-  .software_02 {
-    width: 100%;
-    height: auto;
-    margin-bottom: 200px;
-  }
-  .software_02 .bg_software02 {
-    background: url(../img/software_main_01.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .software_02 .research_01 {
+  .software_01 .research_01 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  .software_02 .research_01 > li {
+  .software_01 .research_01 > li {
     width: 130px;
     height: auto;
     padding: 10px;
@@ -269,7 +272,7 @@
     border-radius: 10px;
     background-color: #eee;
   }
-  .software_02 .research_01 > li > p {
+  .software_01 .research_01 > li > p {
     font-size: 1.5rem;
   }
 }

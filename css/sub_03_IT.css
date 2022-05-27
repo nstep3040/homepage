@@ -17,9 +17,6 @@
 .product_it > p > span {
   font-size: 4rem;
 }
-.product_it > .lastDetails {
-  margin-bottom: 50px;
-}
 .product_it .detail-info {
   float: right;
   font-size: 1.5rem;
@@ -29,7 +26,7 @@
 .product_it details > summary {
   font-size: 3rem;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .product_it details > summary > img {
   display: inline-block;
@@ -46,20 +43,20 @@
   height: 50px;
 }
 .product_it details .apple-logo img {
-  width: 50px;
-  height: 60px;
+  width: 45px;
+  height: 55px;
 }
 .product_it details .hp-logo img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 .product_it details .lenovo-logo img {
   width: 155px;
   height: 35px;
 }
 .product_it details .dell-logo img {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 }
 .product_it details .asus-logo img {
   width: 145px;
@@ -70,8 +67,16 @@
   height: 40px;
 }
 .product_it details .wacom-logo img {
-  width: 80px;
-  height: 75px;
+  width: 150px;
+  height: 35px;
+}
+.product_it details .zotac-logo img {
+  width: 180px;
+  height: 35px;
+}
+.product_it details .gskill-logo img {
+  width: 115px;
+  height: 55px;
 }
 
 /* pc */
@@ -79,6 +84,37 @@
   width: 100%;
   height: auto;
   margin-bottom: 200px;
+}
+.it_01 > .contentsWrap {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 0;
+}
+.it_01 > .contentsWrap > .main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 30px;
+}
+.it_01 > .contentsWrap > .main > .detail-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: #555;
+  text-align: right;
+}
+.it_01 > .contentsWrap > .main .product_it {
+  width: 49%;
+}
+.it_01 > .contentsWrap > .main .product_it:nth-child(2) {
+  border-right: 1px solid #ccc;
+}
+.it_01 > .contentsWrap > .main .product_it > h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 .it_01 .bg_it01 {
   background: url(../img/pc_main_01.jpg) no-repeat;
@@ -89,6 +125,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-left: 20px;
+  gap: 10px 20px;
 }
 .it_01 .pc_01 > li {
   width: 200px;
@@ -96,9 +134,6 @@
   padding: 10px;
   text-align: center;
   overflow: hidden;
-  margin: 0 15px;
-  margin-bottom: 30px;
-  border-radius: 10px;
   background-color: #eee;
 }
 .it_01 .pc_01 > li > p {

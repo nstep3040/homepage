@@ -1,10 +1,23 @@
 $listBackground: #eee;
 $mainBottomMargin: 200;
 
-.main {
-  width: 75vw;
-  min-height: 500px;
-  margin: 0 auto;
+.contentsWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 8vw;
+
+  .main {
+    width: 60vw;
+    min-height: 500px;
+    padding: 10px;
+
+    & > h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .product_indu {
@@ -30,6 +43,65 @@ $mainBottomMargin: 200;
 }
 
 /* layout */
+// home
+.industry_home {
+  width: 100%;
+  height: auto;
+  margin-bottom: $mainBottomMargin + px;
+
+  .bg_industry {
+    background: url(../img/industry.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 85%;
+  }
+
+  & > .contentsWrap {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 0;
+    & > .main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      & > a {
+        display: block;
+        width: 34%;
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 60px 30px;
+        text-align: center;
+        color: #000;
+        transition: 0.3s ease-in-out;
+
+        &:not(:last-child) {
+          border-right: none;
+        }
+
+        &:hover {
+          background-color: rgba(200, 200, 200, 0.5);
+        }
+
+        & > img {
+          width: 80px;
+          min-height: 80px;
+          margin-bottom: 30px;
+        }
+
+        & > h2 {
+          font-size: 2.2rem;
+          margin-bottom: 10px;
+        }
+
+        & > p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
 
 // teledyne
 .industry_01 {
@@ -37,14 +109,14 @@ $mainBottomMargin: 200;
   height: auto;
   margin-bottom: $mainBottomMargin + px;
 
-  //background image
+  // background image
   .bg_industry01 {
-    background: url(../img/teledyne_main_02.png) no-repeat;
+    background: url(../img/underwater/underwater_main_02.png) no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  //teledyne info
+  // teledyne info
   .tele_Info {
     display: flex;
     flex-wrap: nowrap;
@@ -69,12 +141,13 @@ $mainBottomMargin: 200;
 
   // product teledyne
   .underwaterBtns {
+    height: 40px;
     margin-bottom: 20px;
 
     button {
       all: unset;
       width: auto;
-      height: auto;
+      min-height: 40px;
       border: 1px solid #000;
       padding: 5px 10px;
       font-size: 2.5rem;
@@ -90,11 +163,40 @@ $mainBottomMargin: 200;
     }
   }
 
+  .detail-info {
+    float: right;
+    font-size: 1.8rem;
+    color: #999;
+  }
+
   .teleConWrap {
+    & > summary {
+      font-size: 3rem;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    .brandLogo {
+      display: flex;
+      justify-content: center;
+
+      & > img {
+        width: 300px;
+        // height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    & > .product_indu {
+      padding-left: 50px;
+    }
+
     .tele_Con01 {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      gap: 20px 20px;
+      margin-bottom: 30px;
 
       & > li {
         display: inline-block;
@@ -103,10 +205,7 @@ $mainBottomMargin: 200;
         padding: 10px;
         text-align: center;
         overflow: hidden;
-        border-radius: 10px;
         background-color: $listBackground;
-        margin: 0 15px;
-        margin-bottom: 30px;
 
         & > p {
           font-size: 1.8rem;
@@ -115,15 +214,21 @@ $mainBottomMargin: 200;
     }
 
     .teleDivision {
-      font-size: 2.8rem;
-      text-align: right;
-      border-bottom: 2px solid #ccc;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
   }
 
   .sonarWrap {
+    & > summary {
+      font-size: 3rem;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
     .sonar {
+      padding-left: 50px;
+
       h3 {
         font-size: 2.8rem;
       }
@@ -173,7 +278,21 @@ $mainBottomMargin: 200;
   }
 
   .rovWrap {
+    & > summary {
+      font-size: 3rem;
+      cursor: pointer;
+      margin: 10px 0;
+      vertical-align: middle;
+
+      & > img {
+        width: 100px;
+        margin-right: 20px;
+      }
+    }
+
     .rov {
+      padding-left: 50px;
+
       h3 {
         font-size: 2.8rem;
       }
@@ -215,7 +334,6 @@ $mainBottomMargin: 200;
     height: auto;
     padding: 30px;
     margin-bottom: 50px;
-    border-radius: 10px;
     background-color: #eee;
 
     .goud_infoText {
@@ -243,7 +361,6 @@ $mainBottomMargin: 200;
       height: auto;
       padding: 10px;
       text-align: center;
-      border-radius: 10px;
       background-color: $listBackground;
       margin: 0 15px;
       margin-bottom: 30px;
@@ -265,7 +382,6 @@ $mainBottomMargin: 200;
         .selectMag {
           display: block;
           cursor: pointer;
-          border-radius: 10px;
           background-color: rgba(0, 90, 255, 0.6);
         }
       }
@@ -510,7 +626,6 @@ $mainBottomMargin: 200;
       padding: 10px;
       text-align: center;
       overflow: hidden;
-      border-radius: 10px;
       background-color: #eee;
       margin: 0 15px;
       margin-bottom: 30px;

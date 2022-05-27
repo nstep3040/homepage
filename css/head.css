@@ -1,6 +1,7 @@
 .header {
   height: 80px;
   background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 .header > .top {
   position: relative;
@@ -14,7 +15,7 @@
   height: 80px;
   background: url(../img/logo_01.svg) no-repeat;
   background-position: center;
-  background-size: 95%;
+  background-size: 100%;
 }
 .header > .top .logo > a {
   display: block;
@@ -26,24 +27,25 @@
   text-align: center;
   margin-left: 50px;
 }
-.header > .top .topMenu .mainMenu li {
+.header > .top .topMenu .mainMenu > li {
   position: relative;
   float: left;
   width: auto;
-  height: 100%;
+  height: 80px;
   padding: 0 20px;
 }
-.header > .top .topMenu .mainMenu li > a {
+.header > .top .topMenu .mainMenu > li:hover {
+  border-bottom: 5px solid rgb(0, 102, 229);
+}
+.header > .top .topMenu .mainMenu > li > a {
+  display: block;
   line-height: 80px;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   color: #000;
 }
-.header > .top .topMenu .mainMenu li:hover > a {
-  font-weight: 700;
-}
-.header > .top .topMenu .mainMenu li .subMenu {
+.header > .top .topMenu .mainMenu > li .subMenu {
   display: none;
   position: absolute;
   top: 80px;
@@ -51,7 +53,7 @@
   z-index: 10;
   background-color: #fff;
 }
-.header > .top .topMenu .mainMenu li .subMenu > li {
+.header > .top .topMenu .mainMenu > li .subMenu > li {
   display: block;
   width: 200px;
   height: 50px;
@@ -60,23 +62,23 @@
   z-index: 10;
   transition: 0.3s ease;
 }
-.header > .top .topMenu .mainMenu li .subMenu > li > a {
+.header > .top .topMenu .mainMenu > li .subMenu > li > a {
   display: block;
   font-size: 17px;
   line-height: 50px;
   font-weight: 500;
   color: #000;
 }
-.header > .top .topMenu .mainMenu li .subMenu > li:hover {
-  background-color: #888;
+.header > .top .topMenu .mainMenu > li .subMenu > li:hover {
+  background-color: #ddd;
 }
-.header > .top .topMenu .mainMenu li .subMenu > li:hover a {
+.header > .top .topMenu .mainMenu > li .subMenu > li:hover a {
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
-.header > .top .topMenu .mainMenu li:hover > .subMenu {
+.header > .top .topMenu .mainMenu > li:hover > .subMenu {
   display: block;
-  opacity: 0.9;
+  opacity: 1;
 }
 .header > .top .linked {
   position: absolute;
@@ -97,6 +99,7 @@
 }
 
 .mainMenu-mobile {
+  display: none;
   position: absolute;
   top: 80px;
   right: -300px;
@@ -161,65 +164,19 @@
   display: block;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1250px) {
+  .header > .top {
+    width: 100vw;
+    padding: 0 20px;
+  }
   .header > .top .topMenu {
     display: none;
   }
-  .header > .top .topMenu .mainMenu li {
-    position: relative;
-    float: left;
-    width: 140px;
-    height: 100%;
-  }
-  .header > .top .topMenu .mainMenu li > a {
-    line-height: 80px;
-    font-size: 1.7rem;
-    font-weight: 500;
-    text-align: center;
-    color: #000;
-  }
-  .header > .top .topMenu .mainMenu li:hover > a {
-    font-weight: 700;
-  }
-  .header > .top .topMenu .mainMenu li .subMenu {
+  .header > .top .linked {
     display: none;
     position: absolute;
-    top: 80px;
-    left: 0px;
-    z-index: 10;
-    background-color: #fff;
-  }
-  .header > .top .topMenu .mainMenu li .subMenu > li {
-    display: block;
-    width: 200px;
-    height: 50px;
-    text-align: left;
-    padding: 0 20px;
-    z-index: 10;
-    transition: 0.3s ease;
-  }
-  .header > .top .topMenu .mainMenu li .subMenu > li > a {
-    display: block;
-    font-size: 17px;
-    line-height: 50px;
-    font-weight: 500;
-    color: #000;
-  }
-  .header > .top .topMenu .mainMenu li .subMenu > li:hover {
-    background-color: #888;
-  }
-  .header > .top .topMenu .mainMenu li .subMenu > li:hover a {
-    font-weight: 700;
-    color: #fff;
-  }
-  .header > .top .topMenu .mainMenu li:hover > .subMenu {
-    display: block;
-    opacity: 0.9;
-  }
-  .header > .top .linked {
-    position: absolute;
     top: 25px;
-    right: 130px;
+    right: 80px;
     width: 30px;
     height: 30px;
     background: url(../img/naver_blog_01.png) no-repeat;
@@ -230,17 +187,64 @@
     display: block;
     height: 30px;
   }
-  .header > .top #menuMobileBtn {
+  .header > .top #menuMobileBtnWrap {
     display: block;
     position: absolute;
-    top: 27px;
-    right: 60px;
-    width: 25px;
-    height: 25px;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn.menuMobileOn span {
+    background-color: #fff;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn.menuMobileOn span::before {
+    top: 0;
+    transform: rotateZ(45deg);
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn.menuMobileOn span::after {
+    top: 0;
+    transform: rotateZ(-45deg);
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    border-radius: 2px;
+    background-color: #222;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span::before, .header > .top #menuMobileBtnWrap #menuMobileBtn span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #222;
+    transition: all 0.3s ease;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span::before {
+    top: -10px;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span::after {
+    top: 10px;
   }
 
   .mainMenu-mobile {
+    display: block;
     position: absolute;
     top: 80px;
     right: -300px;
@@ -336,26 +340,15 @@
     opacity: 0.9;
   }
   .header > .top .linked {
-    position: absolute;
-    top: 16px;
-    right: 70px;
-    width: 30px;
-    height: 30px;
-    background: url(../img/naver_blog_01.png) no-repeat;
-    background-size: contain;
-    background-position: center;
+    display: none;
   }
-  .header > .top .linked > a {
-    display: block;
-    height: 30px;
-  }
-  .header > .top #menuMobileBtn {
+  .header > .top #menuMobileBtnWrap {
     display: block;
     position: absolute;
-    top: 17px;
+    top: 10px;
     right: 20px;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
   }
 

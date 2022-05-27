@@ -11,7 +11,7 @@ $mainBottomMargin: 200;
     position: relative;
     width: 100%;
     height: 400px;
-    background: url(../img/main.jpg) no-repeat;
+    background: url(../img/main_02.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
@@ -23,7 +23,7 @@ $mainBottomMargin: 200;
       font-size: 1.7rem;
       text-align: center;
       color: #fff;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.2);
 
       h1 {
         position: absolute;
@@ -40,11 +40,12 @@ $mainBottomMargin: 200;
   .q_links {
     width: 80vw;
     margin: 0 auto 15px auto;
-    font-size: 35px;
+    font-size: 3rem;
+    font-weight: 700;
     overflow: hidden;
 
     span {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 
@@ -175,6 +176,10 @@ $mainBottomMargin: 200;
   }
 }
 
+//-------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------
+
 // tablet
 @media screen and (max-width: 900px) {
   .contents {
@@ -187,7 +192,7 @@ $mainBottomMargin: 200;
       position: relative;
       width: 100%;
       height: 400px;
-      background: url(../img/main.jpg) no-repeat;
+      background: url(../img/main_02.jpg) no-repeat;
       background-size: cover;
       background-position: center;
       margin-bottom: 50px;
@@ -198,7 +203,7 @@ $mainBottomMargin: 200;
         text-align: center;
         color: #fff;
         padding: 0 30px;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.2);
 
         h1 {
           position: absolute;
@@ -337,6 +342,10 @@ $mainBottomMargin: 200;
   }
 }
 
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+
 // mobile
 @media screen and (max-width: 767px) {
   .contents {
@@ -350,7 +359,7 @@ $mainBottomMargin: 200;
       position: relative;
       width: 100%;
       height: 400px;
-      background: url(../img/main.jpg) no-repeat;
+      background: url(../img/main_02.jpg) no-repeat;
       background-size: cover;
       background-position: center;
       margin-bottom: 10px;
@@ -360,7 +369,7 @@ $mainBottomMargin: 200;
         font-size: 1.3rem;
         text-align: center;
         color: #fff;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.2);
 
         h1 {
           position: absolute;
@@ -401,13 +410,13 @@ $mainBottomMargin: 200;
       .quickLink {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: flex-start;
+        gap: 20px 10%;
 
         li {
           position: relative;
           width: 150px;
           height: 150px;
-          margin-bottom: 10px;
 
           a {
             display: block;

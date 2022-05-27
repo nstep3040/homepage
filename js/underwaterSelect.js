@@ -1,42 +1,21 @@
-const selectBtns = document.querySelectorAll(".underwaterBtns button");
-const telePost = document.querySelector(".teleConWrap");
-const sonarPost = document.querySelector(".sonarWrap");
-const rovPost = document.querySelector(".rovWrap");
+const connector = document.getElementById("underwater__connector");
+const sonar = document.getElementById("underwater__sonar");
+const rov = document.getElementById("underwater__rov");
 
-const HIDDEN_CLASS = "hidden";
-
-function hiddenPost() {
-  telePost.classList.add(HIDDEN_CLASS);
-  sonarPost.classList.add(HIDDEN_CLASS);
-  rovPost.classList.add(HIDDEN_CLASS);
-}
-
-function showPost(event) {
-  hiddenPost();
-  switch (event.path[0]) {
-    case selectBtns[0]:
-      telePost.classList.remove(HIDDEN_CLASS);
-      break;
-    case selectBtns[1]:
-      sonarPost.classList.remove(HIDDEN_CLASS);
-      break;
-    case selectBtns[2]:
-      rovPost.classList.remove(HIDDEN_CLASS);
+function openConn() {
+  if (!connector.open) {
+    connector.open = true;
   }
 }
 
-function disableBtns() {
-  selectBtns.forEach((element) => {
-    element.classList.remove("active");
-  });
+function openSonar() {
+  if (!sonar.open) {
+    sonar.open = true;
+  }
 }
 
-function handleBtns(event) {
-  disableBtns();
-  showPost(event);
-  event.path[0].classList.add("active");
+function openRov() {
+  if (!rov.open) {
+    rov.open = true;
+  }
 }
-
-selectBtns.forEach((element) => {
-  element.addEventListener("click", handleBtns);
-});
