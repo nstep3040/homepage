@@ -23,5 +23,4 @@ document.write(`
             </ul>
         </div>
     </div>
-    <script src="./js/underwaterSelect.js"></script>
 `);

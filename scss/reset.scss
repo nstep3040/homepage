@@ -23,6 +23,10 @@
   user-select: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrap {
   position: relative;
   width: 100%;

@@ -7,7 +7,7 @@
 }
 .contentsWrap .main {
   width: 60vw;
-  min-height: 500px;
+  min-height: 400px;
   padding: 10px;
 }
 .contentsWrap .main > h2 {
@@ -115,26 +115,6 @@
   width: 30%;
   object-fit: contain;
 }
-.industry_01 .underwaterBtns {
-  height: 40px;
-  margin-bottom: 20px;
-}
-.industry_01 .underwaterBtns button {
-  all: unset;
-  width: auto;
-  min-height: 40px;
-  border: 1px solid #000;
-  padding: 5px 10px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.industry_01 .underwaterBtns button.active {
-  background-color: #555;
-  color: #fff;
-}
 .industry_01 .detail-info {
   float: right;
   font-size: 1.8rem;
@@ -194,17 +174,20 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.industry_01 .sonarWrap .sonar > li:first-child {
+.industry_01 .sonarWrap .sonar > li:nth-child(1), .industry_01 .sonarWrap .sonar > li:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 20px;
+}
+.industry_01 .sonarWrap .sonar > li:nth-child(2) > figure > img {
+  height: 300px;
 }
 .industry_01 .sonarWrap .sonar > li > figure {
   display: inline-block;
   width: auto;
   padding: 20px;
   background-color: #eee;
-  border-radius: 10px;
 }
 .industry_01 .sonarWrap .sonar > li > figure > img {
   height: 110px;
@@ -311,7 +294,7 @@
   font-size: 18px;
 }
 .industry_02 .goud_Mag01 > li:hover .selectMag {
-  display: block;
+  opacity: 1;
   cursor: pointer;
   background-color: rgba(0, 90, 255, 0.6);
 }
@@ -320,12 +303,14 @@
 }
 .industry_02 .selectMag {
   position: absolute;
-  display: none;
+  display: block;
   width: 200px;
   height: 100%;
   text-align: center;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: 0.3s ease;
 }
 .industry_02 .selectMag h3 {
   position: relative;

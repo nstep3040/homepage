@@ -45,6 +45,10 @@ $mainBottomMargin: 200;
       }
     }
 
+    .ampere-logo img {
+      width: 104px;
+      height: 55px;
+    }
     .samsung-logo img {
       width: 180px;
       height: 35px;
@@ -92,7 +96,52 @@ $mainBottomMargin: 200;
   }
 }
 
-/* pc */
+// ampere
+.it_01 {
+  & > .contentsWrap {
+    & > .main {
+      & > .product_it:nth-child(2) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+
+        & > details > ul > li {
+          position: relative;
+          transition: 0.3s ease;
+
+          & > a {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: 0.3s ease;
+            opacity: 0;
+            color: #fff;
+            font-size: 1.9rem;
+            font-weight: 700;
+
+            & > h3 {
+              border: 2px solid #fff;
+              padding: 0 20px;
+            }
+          }
+
+          &:hover > a {
+            // background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 102, 229, 0.5);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* it devices */
 
 .it_01 {
   width: 100%;
@@ -106,6 +155,7 @@ $mainBottomMargin: 200;
     & > .main {
       position: relative;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
@@ -123,7 +173,7 @@ $mainBottomMargin: 200;
       .product_it {
         width: 49%;
 
-        &:nth-child(2) {
+        &:nth-child(3) {
           border-right: 1px solid #ccc;
         }
 

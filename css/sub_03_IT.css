@@ -34,6 +34,10 @@
   vertical-align: middle;
   margin: 0 !important;
 }
+.product_it details .ampere-logo img {
+  width: 104px;
+  height: 55px;
+}
 .product_it details .samsung-logo img {
   width: 180px;
   height: 35px;
@@ -79,7 +83,40 @@
   height: 55px;
 }
 
-/* pc */
+.it_01 > .contentsWrap > .main > .product_it:nth-child(2) {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.it_01 > .contentsWrap > .main > .product_it:nth-child(2) > details > ul > li {
+  position: relative;
+  transition: 0.3s ease;
+}
+.it_01 > .contentsWrap > .main > .product_it:nth-child(2) > details > ul > li > a {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  opacity: 0;
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.it_01 > .contentsWrap > .main > .product_it:nth-child(2) > details > ul > li > a > h3 {
+  border: 2px solid #fff;
+  padding: 0 20px;
+}
+.it_01 > .contentsWrap > .main > .product_it:nth-child(2) > details > ul > li:hover > a {
+  background-color: rgba(0, 102, 229, 0.5);
+  opacity: 1;
+}
+
+/* it devices */
 .it_01 {
   width: 100%;
   height: auto;
@@ -93,6 +130,7 @@
 .it_01 > .contentsWrap > .main {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -109,7 +147,7 @@
 .it_01 > .contentsWrap > .main .product_it {
   width: 49%;
 }
-.it_01 > .contentsWrap > .main .product_it:nth-child(2) {
+.it_01 > .contentsWrap > .main .product_it:nth-child(3) {
   border-right: 1px solid #ccc;
 }
 .it_01 > .contentsWrap > .main .product_it > h2 {
