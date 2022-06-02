@@ -1,5 +1,5 @@
 document.write(`
-    <footer class="footer">
+<footer class="footer">
     <div class="f_info clearfix">
         <div class="f_logo"></div>
         <div class="f_text">
@@ -11,8 +11,13 @@ document.write(`
             </p>
         </div>
     </div>
-    </footer>
+    <div class="f_links">
+        <ul>
+            <li><a href="https://blog.naver.com/nstep3040" target="_blank"><img src="./img/icon/blog.svg"></a></li>
+        </ul>
     </div>
-    <script src="./js/slideShow.js"></script>
-    <script src="./js/menuMobile.js"></script>
+</footer>
+</div>
+<script src="./js/slideShow.js"></script>
+<script src="./js/menuMobile.js"></script>
 `);

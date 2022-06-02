@@ -2,18 +2,22 @@
   position: absolute;
   bottom: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 80px;
-  background-color: #ccc;
+  // background-color: #ccc;
+  border-top: 3px solid rgb(0, 102, 229);
+  gap: 0 15%;
 
   & .f_info {
-    // margin: 0 auto;
+    display: flex;
     height: 100%;
+    gap: 0 40px;
 
     // logo
     & .f_logo {
-      float: left;
       width: 150px;
       height: 100%;
       background: url(../img/logo_02.svg) no-repeat;
@@ -21,15 +25,31 @@
     }
 
     & .f_text {
-      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 0 auto;
-      padding: 10px 0 10px 40px;
 
       & p {
         font-weight: 500;
         font-size: 1.3rem;
         line-height: 20px;
         color: #555;
+      }
+    }
+  }
+
+  & .f_links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+
+    & a {
+      & img {
+        width: 20px;
+        height: 20px;
       }
     }
   }

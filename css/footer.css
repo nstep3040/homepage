@@ -2,31 +2,47 @@
   position: absolute;
   bottom: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 80px;
-  background-color: #ccc;
+  border-top: 3px solid rgb(0, 102, 229);
+  gap: 0 15%;
 }
 .footer .f_info {
+  display: flex;
   height: 100%;
+  gap: 0 40px;
 }
 .footer .f_info .f_logo {
-  float: left;
   width: 150px;
   height: 100%;
   background: url(../img/logo_02.svg) no-repeat;
   background-position: center;
 }
 .footer .f_info .f_text {
-  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  padding: 10px 0 10px 40px;
 }
 .footer .f_info .f_text p {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 20px;
   color: #555;
+}
+.footer .f_links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+}
+.footer .f_links a img {
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 767px) {
