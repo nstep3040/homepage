@@ -14,7 +14,7 @@ document.write(`
     <meta property="og:description" content="수중장비&middot;마그네틱&middot;RFID 및 IT DEVICE, SOFTWARE 전문기업">
     <!-- <meta property="og:image" content="http://www.mysite.com/myimage.jpg"> -->
     <meta property="og:url" content="http://www.nstep.co.kr">
-    <link rel="favicon" href="./img/icon/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="./img/icon/favicon.ico" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="./css/common.css?ver=1.1">
     <title>Welcom to NextStep</title>
     </head>
