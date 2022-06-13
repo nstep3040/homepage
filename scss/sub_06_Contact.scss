@@ -5,6 +5,11 @@ $mainBottomMargin: 200;
   height: auto;
   margin-bottom: $mainBottomMargin + px;
 
+  .main {
+    width: 75vw;
+    margin: 0 auto;
+  }
+
   // background image
   .bg_cont01 {
     background: url(../img/directions.jpg) no-repeat;

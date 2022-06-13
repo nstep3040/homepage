@@ -4,6 +4,10 @@
   margin-bottom: 200px;
   /* googlemap */
 }
+.contact_01 .main {
+  width: 75vw;
+  margin: 0 auto;
+}
 .contact_01 .bg_cont01 {
   background: url(../img/directions.jpg) no-repeat;
 }

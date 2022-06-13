@@ -1,6 +1,7 @@
 .contentsWrap {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   width: 100vw;
   padding: 0 8vw;
@@ -9,10 +10,6 @@
   width: 60vw;
   min-height: 400px;
   padding: 10px;
-}
-.contentsWrap .main > h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
 }
 
 .product_indu {
@@ -24,9 +21,11 @@
   margin-bottom: 10px;
 }
 .product_indu > h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
+  font-weight: 400;
   text-align: right;
-  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   color: #333;
 }
@@ -115,22 +114,24 @@
   width: 30%;
   object-fit: contain;
 }
+.industry_01 #underwater__connector,
+.industry_01 #underwater__sonar,
+.industry_01 #underwater__rov {
+  font-size: 2.5rem;
+}
 .industry_01 .detail-info {
   float: right;
   font-size: 1.8rem;
   color: #999;
 }
-.industry_01 .teleConWrap > summary {
+.industry_01 .teleConWrap > details > summary {
   font-size: 3rem;
+  margin-bottom: 30px;
+  vertical-align: middle;
   cursor: pointer;
-  margin: 10px 0;
 }
-.industry_01 .teleConWrap .brandLogo {
-  display: flex;
-  justify-content: center;
-}
-.industry_01 .teleConWrap .brandLogo > img {
-  width: 300px;
+.industry_01 .teleConWrap > details > summary > img {
+  height: 30px;
   object-fit: contain;
 }
 .industry_01 .teleConWrap > .product_indu {
@@ -160,12 +161,16 @@
   margin-bottom: 20px;
 }
 .industry_01 .sonarWrap > summary {
-  font-size: 3rem;
+  font-size: 2.3rem;
   cursor: pointer;
-  margin: 10px 0;
+  margin-bottom: 30px;
+}
+.industry_01 .sonarWrap[open] > summary {
+  margin-bottom: 10px;
 }
 .industry_01 .sonarWrap .sonar {
   padding-left: 50px;
+  margin-bottom: 30px;
 }
 .industry_01 .sonarWrap .sonar h3 {
   font-size: 2.8rem;
@@ -209,9 +214,9 @@
   font-size: 2rem;
 }
 .industry_01 .rovWrap > summary {
-  font-size: 3rem;
+  font-size: 2.3rem;
   cursor: pointer;
-  margin: 10px 0;
+  margin-bottom: 30px;
   vertical-align: middle;
 }
 .industry_01 .rovWrap > summary > img {
@@ -226,6 +231,16 @@
 }
 .industry_01 .rovWrap .rov > li {
   margin-bottom: 10px;
+}
+.industry_01 .rovWrap .rov > li:first-child {
+  background-color: #eee;
+  width: 420px;
+  height: 390px;
+  padding: 10px;
+}
+.industry_01 .rovWrap .rov > li:first-child > img {
+  width: 400px;
+  object-fit: contain;
 }
 .industry_01 .rovWrap .rov > li ul {
   padding-left: 20px;
@@ -266,11 +281,17 @@
   width: 30%;
   object-fit: contain;
 }
+.industry_02 #magnet__gripper,
+.industry_02 #magnet__filter {
+  font-size: 2.5rem;
+}
 .industry_02 .goud_Mag01,
 .industry_02 .goud_Mag02 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 30px 15px;
+  margin-bottom: 50px;
 }
 .industry_02 .goud_Mag01 > li,
 .industry_02 .goud_Mag02 > li {
@@ -281,8 +302,6 @@
   padding: 10px;
   text-align: center;
   background-color: #eee;
-  margin: 0 15px;
-  margin-bottom: 30px;
 }
 .industry_02 .goud_Mag01 > li > img,
 .industry_02 .goud_Mag02 > li > img {
@@ -413,31 +432,51 @@
 .industry_02 .dataSheet .specInfoWrap .specWrap > p {
   margin-bottom: 10px;
 }
+.industry_02 .dataSheet .specInfoWrap .specWrap .spec p {
+  height: 30px;
+}
 .industry_02 .dataSheet .specInfoWrap .specWrap .spec .specName {
+  display: flex;
+  flex-direction: column;
   float: left;
   width: 50%;
+  gap: 5px 0;
 }
 .industry_02 .dataSheet .specInfoWrap .specWrap .spec .specValue {
+  display: flex;
+  flex-direction: column;
   float: right;
   width: 50%;
+  gap: 5px 0;
 }
 .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap {
   width: 100%;
   height: auto;
 }
 .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downName {
+  display: flex;
+  flex-direction: column;
   float: left;
   width: 50%;
+  gap: 5px 0;
+}
+.industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downName > p {
+  height: 30px;
 }
 .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink {
   float: right;
   width: 50%;
   display: flex;
   flex-direction: column;
+  gap: 5px 0;
 }
 .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink a {
   display: inline-block;
   text-align: right;
+  height: 30px;
+}
+.industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink a:hover > img {
+  filter: none;
 }
 .industry_02 .dataSheet .specInfoWrap .dataSheetDownWrap .downWrap .downLink img {
   margin: 0;
@@ -461,7 +500,7 @@
   margin-bottom: 200px;
 }
 .industry_03 .bg_industry03 {
-  background: url(../img/slide_show_03.png) no-repeat;
+  background: url(../img/aegid/aegid_background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -485,10 +524,69 @@
   width: 30%;
   object-fit: contain;
 }
+.industry_03 #rfid__transponder {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.industry_03 #rfid__transponder::before {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(../img/aegid/icon_transponder.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
+}
+.industry_03 #rfid__reader {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.industry_03 #rfid__reader::before {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(../img/aegid/icon_readers.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
+}
+.industry_03 #rfid__antenna {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.industry_03 #rfid__antenna::before {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url(../img/aegid/icon_antennas.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px;
+}
 .industry_03 .aeg_Rfid01 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 30px 15px;
+  margin-bottom: 50px;
 }
 .industry_03 .aeg_Rfid01 > li {
   display: inline-block;
@@ -498,8 +596,6 @@
   text-align: center;
   overflow: hidden;
   background-color: #eee;
-  margin: 0 15px;
-  margin-bottom: 30px;
 }
 .industry_03 .aeg_Rfid01 > li img {
   height: 185px;
@@ -825,11 +921,6 @@
     height: auto;
     margin-bottom: 200px;
   }
-  .industry_03 .bg_industry03 {
-    background: url(../img/slide_show_03.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   .industry_03 .aeg_Info {
     display: flex;
     flex-wrap: wrap;
@@ -854,6 +945,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 30px 15px;
   }
   .industry_03 .aeg_Rfid01 > li {
     position: relative;
@@ -862,10 +954,7 @@
     height: auto;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
     background-color: #eee;
-    margin: 0 15px;
-    margin-bottom: 30px;
   }
   .industry_03 .aeg_Rfid01 > li img {
     height: 100px;

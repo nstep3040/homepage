@@ -106,7 +106,7 @@
   width: 300px;
   height: 200vh;
   transition: 0.3s ease;
-  z-index: 10;
+  z-index: 20;
   background-color: #fff;
 }
 .mainMenu-mobile a {
@@ -251,7 +251,7 @@
     width: 300px;
     height: 200vh;
     transition: 0.3s ease;
-    z-index: 10;
+    z-index: 20;
     background-color: #fff;
   }
   .mainMenu-mobile a {
@@ -359,7 +359,7 @@
     width: 300px;
     height: 200vh;
     transition: 0.5s ease;
-    z-index: 10;
+    z-index: 20;
     background-color: #fff;
   }
   .mainMenu-mobile a {
