@@ -170,10 +170,13 @@ function currentList(selectedList) {
     checkedRadio(controllers, images);
   }
 
-  for (let i = 0; i < controllers.length; i++) {
-    currentIdx = i;
-    controllers[i].addEventListener("click", clickedControls);
-  }
+  // for (let i = 0; i < controllers.length; i++) {
+  //   currentIdx = i;
+  //   controllers[i].addEventListener("click", clickedControls);
+  // }
+  controllers.forEach((element) => {
+    element.addEventListener("click", clickedControls);
+  });
 
   // 이전 버튼 클릭 시 사진 바꾸기
   const prevBtn = activeDataSheet.querySelector(".prevBtn");

@@ -416,71 +416,91 @@
     vertical-align: middle;
     margin: 0 !important;
   }
-  .product_it details .samsung-logo img {
-    width: 180px;
+  .product_it details .ampere-logo img {
+    width: 67px;
     height: 35px;
+  }
+  .product_it details .samsung-logo img {
+    width: 110px;
+    height: 17px;
   }
   .product_it details .lg-logo img {
-    width: 110px;
-    height: 50px;
+    width: 57px;
+    height: 25px;
   }
   .product_it details .apple-logo img {
-    width: 50px;
-    height: 60px;
+    width: 28px;
+    height: 32px;
   }
   .product_it details .hp-logo img {
-    width: 60px;
-    height: 60px;
+    width: 32px;
+    height: 32px;
   }
   .product_it details .lenovo-logo img {
-    width: 155px;
-    height: 35px;
+    width: 95px;
+    height: 20px;
   }
   .product_it details .dell-logo img {
-    width: 65px;
-    height: 65px;
+    width: 33px;
+    height: 33px;
   }
   .product_it details .asus-logo img {
-    width: 145px;
-    height: 35px;
+    width: 85px;
+    height: 17px;
   }
   .product_it details .microsoft-logo img {
     width: 170px;
     height: 40px;
   }
   .product_it details .wacom-logo img {
-    width: 80px;
-    height: 75px;
+    width: 90px;
+    height: 16px;
+  }
+  .product_it details .zotac-logo img {
+    width: 110px;
+    height: 22px;
+  }
+  .product_it details .gskill-logo img {
+    width: 63px;
+    height: 31px;
   }
 
   /* pc */
   .it_01 {
     width: 100%;
     height: auto;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
   .it_01 .bg_it01 {
     background: url(../img/pc_main_01.jpg) no-repeat;
     background-size: cover;
     background-position: center;
   }
-  .it_01 .pc_01 {
+  .it_01 .contentsWrap {
+    width: 90vw;
+  }
+  .it_01 .contentsWrap .main {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .it_01 .contentsWrap .main > .product_it:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .it_01 .contentsWrap .main .pc_01 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 10px 10px;
   }
-  .it_01 .pc_01 > li {
+  .it_01 .contentsWrap .main .pc_01 > li {
     width: 130px;
     height: auto;
     padding: 10px;
     text-align: center;
     overflow: hidden;
-    margin: 0 15px;
-    margin-bottom: 30px;
-    border-radius: 10px;
     background-color: #eee;
   }
-  .it_01 .pc_01 > li > p {
+  .it_01 .contentsWrap .main .pc_01 > li > p {
     font-size: 1.5rem;
   }
 

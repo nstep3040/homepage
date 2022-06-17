@@ -19,4 +19,6 @@ document.write(`
 </footer>
 </div>
 <script src="../js/menuMobile.js"></script>
+<script src="../js/detailsClose.js"></script>
+<script src="../js/menuByScroll.js"></script>
 `);

@@ -34,4 +34,10 @@
   object-fit: contain;
 }
 
+@media screen and (max-width: 767px) {
+  .rnb {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=rnb.css.map */

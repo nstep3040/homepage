@@ -25,7 +25,7 @@ function openMobileMenu() {
 }
 
 function handleMobileBtn() {
-  if (!activeMenu && !menuMobileBtn.classList.contains("menuBobileOn")) {
+  if (!activeMenu && !menuMobileBtn.classList.contains("menuMobileOn")) {
     openMobileMenu();
   } else {
     closeMobileMenu();
@@ -44,3 +44,4 @@ function hideMobileMenu() {
 }
 
 window.addEventListener("resize", hideMobileMenu);
+window.addEventListener("scroll", closeMobileMenu);

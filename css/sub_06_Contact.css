@@ -8,6 +8,12 @@
   width: 75vw;
   margin: 0 auto;
 }
+.contact_01 .main .inner h2 {
+  display: inline-block;
+  font-size: 2.5rem;
+  padding: 5px 10px;
+  border: 3px solid rgb(0, 102, 229);
+}
 .contact_01 .bg_cont01 {
   background: url(../img/directions.jpg) no-repeat;
 }
@@ -67,14 +73,26 @@
   }
   .adressWrap .adress strong {
     display: inline-block;
-    padding: 15px 30px 5px 0;
+    padding: 0;
   }
   .adressWrap .adress p {
     display: block;
     min-width: 200px;
     padding: 0;
   }
-  .adressWrap .adress > ul > li:first-child {
+  .adressWrap .adress > li {
+    padding-bottom: 10px;
+  }
+  .adressWrap .adress > ul > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    word-break: keep-all;
+    padding: 10px 0;
+    gap: 3px 0;
+  }
+  .adressWrap .adress > ul > li:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
 }

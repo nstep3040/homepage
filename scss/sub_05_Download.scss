@@ -371,214 +371,302 @@ $mainBottomMargin: 200;
 @media screen and (max-width: 767px) {
   $listBackground: #eee;
 
-  .download {
-    padding: 30px 0;
-    margin-bottom: 10px;
-    overflow-x: scroll;
-
-    img {
-      width: 180px;
-      height: 185px;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
-
-    & > h3 {
-      font-size: 30px;
-      text-align: right;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 10px;
-      color: #333;
-    }
-  }
-
   /* download */
 
   .down_01 {
-    width: 100%;
-    height: auto;
-    margin-bottom: $mainBottomMargin + px;
+    .downloadBoard {
+      padding-top: 30px;
 
-    // background image
-    .bg_down01 {
-      background: url(../img/download.jpg) no-repeat;
-      background-size: cover;
+      table {
+        width: 80vw;
+        height: 430px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: start;
+        word-break: keep-all;
+
+        tbody {
+          display: none;
+
+          tr {
+            height: 60px;
+            font-size: 1.8rem;
+            font-weight: 500;
+
+            &:first-child {
+              border-top: 2px solid #333;
+            }
+
+            td {
+              border: 1px solid #999;
+              border-left: none;
+              border-right: none;
+              padding: 0 10px;
+
+              a {
+                color: #000;
+
+                &:hover {
+                  font-weight: 700;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+
+        tfoot {
+          tr {
+            height: 40px;
+            font-size: 1.8rem;
+
+            td {
+              width: 80vw;
+              text-align: center;
+              border: none;
+
+              button {
+                all: unset;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 1.5rem;
+                border-radius: 1px;
+                background-color: #eee;
+
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+
+        .boardShow {
+          display: block;
+
+          td {
+            width: 80vw;
+          }
+        }
+
+        .boardSelect {
+          color: #fff;
+          background-color: #555;
+        }
+      }
     }
 
-    .data_01 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+    .downloadPost {
+      & > a {
+        display: block;
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        color: #000;
 
-      & > li {
-        width: 200px;
-        height: auto;
-        padding: 10px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 15px;
-        margin-bottom: 30px;
-        border-radius: 10px;
-        background-color: $listBackground;
-
-        & > a {
-          display: inline-block;
-          font-size: 2.2rem;
+        &:hover {
           font-weight: 700;
-          color: #000;
-
-          &:hover {
-            text-decoration: underline;
-          }
-
-          & > img {
-            width: 20px;
-            height: 20px;
-            margin: 0;
-            margin-left: 10px;
-            filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
-          }
         }
       }
-    }
-  }
 
-  /* table */
-  .goud-datasheet-text {
-    font-size: 2.5rem;
-    margin-left: 20px;
-    color: #666;
-  }
-  .goud-datasheet {
-    width: 650px;
-    border: 2px solid #000;
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-left: 20px;
-    margin-bottom: 50px;
+      & > table {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+        border-collapse: collapse;
+        text-align: start;
 
-    th {
-      height: 35px;
-      border: 1px solid #000;
-      background-color: #aaa;
-      color: #fff;
-      font-weight: 700;
-    }
+        & > thead {
+          position: relative;
+          height: 60px;
+          border-top: 2px solid #333;
+          vertical-align: top;
 
-    td {
-      height: 35px;
-      border: 1px solid #000;
+          & > tr {
+            & > td {
+              padding: 5px 20px;
 
-      &:nth-child(1) {
-        width: 18%;
-      }
+              span {
+                font-size: 1.8rem;
+              }
 
-      &:nth-child(2) {
-        width: 19%;
-      }
+              a {
+                position: absolute;
+                top: 28px;
+                right: 20px;
+                font-size: 1.8rem;
+                color: #000;
 
-      &:nth-child(3) {
-        width: 21%;
-      }
+                & > img {
+                  height: 1.6rem;
+                  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+                }
 
-      &:nth-child(4) {
-        width: 14%;
-      }
+                &:hover {
+                  font-weight: 700;
 
-      &:nth-child(5) {
-        width: 14%;
-      }
-
-      &:nth-child(6) {
-        width: 14%;
-      }
-    }
-
-    thead {
-      &:first-child {
-        tr {
-          th {
-            background-color: #ddd;
-            color: #000;
+                  & > img {
+                    filter: none;
+                  }
+                }
+              }
+            }
           }
         }
-      }
-    }
 
-    img {
-      width: 25px;
-      height: 25px;
-      margin: 0;
-      margin-bottom: 3px;
-      vertical-align: middle;
-      filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+        & > tbody {
+          position: relative;
 
-      &:hover {
-        filter: none;
-      }
-    }
-  }
+          & > tr {
+            min-height: 500px;
+            font-size: 1.8rem;
 
-  .goud-datasheet-clean {
-    width: 650px;
-    border: 2px solid #000;
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-left: 20px;
-    margin-bottom: 50px;
+            & > td {
+              border: 1px solid #999;
+              border-left: none;
+              border-right: none;
+              padding: 20px 40px;
 
-    th {
-      height: 40px;
-      border: 1px solid #000;
-      background-color: #aaa;
-      color: #fff;
-      font-weight: 700;
-    }
+              img {
+                height: 150px;
+              }
 
-    td {
-      height: 40px;
-      border: 1px solid #000;
+              .goud-datasheet {
+                width: 100%;
+                border: 2px solid #000;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 1.5rem;
 
-      &:nth-child(1) {
-        width: 60%;
-      }
+                th {
+                  height: 40px;
+                  border: 1px solid #000;
+                  background-color: #aaa;
+                  color: #fff;
+                  font-weight: 700;
+                }
 
-      &:nth-child(2) {
-        width: 13%;
-      }
+                td {
+                  height: 50px;
+                  border: 1px solid #000;
 
-      &:nth-child(3) {
-        width: 13%;
-      }
+                  &:nth-child(1) {
+                    width: 25%;
+                  }
 
-      &:nth-child(4) {
-        width: 13%;
-      }
-    }
+                  &:nth-child(2) {
+                    width: 20%;
+                  }
 
-    thead {
-      &:first-child {
-        tr {
-          th {
-            background-color: #ddd;
-            color: #000;
+                  &:nth-child(3) {
+                    width: 17.5%;
+                  }
+
+                  &:nth-child(4) {
+                    width: 12.5%;
+                  }
+
+                  &:nth-child(5) {
+                    width: 12.5%;
+                  }
+
+                  &:nth-child(6) {
+                    width: 12.5%;
+                  }
+                }
+
+                thead {
+                  height: 70px;
+
+                  &:first-child {
+                    tr {
+                      th {
+                        background-color: #ddd;
+                        color: #000;
+                      }
+                    }
+                  }
+                }
+
+                img {
+                  width: 25px;
+                  height: 25px;
+                  margin: 0;
+                  margin-bottom: 3px;
+                  vertical-align: middle;
+                  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+
+                  &:hover {
+                    filter: none;
+                  }
+                }
+              }
+
+              .goud-datasheet-clean {
+                width: 100%;
+                border: 2px solid #000;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 1.5rem;
+
+                th {
+                  height: 40px;
+                  border: 1px solid #000;
+                  background-color: #aaa;
+                  color: #fff;
+                  font-weight: 700;
+                }
+
+                td {
+                  height: 50px;
+                  border: 1px solid #000;
+
+                  &:nth-child(1) {
+                    width: 60%;
+                  }
+
+                  &:nth-child(2) {
+                    width: 13%;
+                  }
+
+                  &:nth-child(3) {
+                    width: 13%;
+                  }
+
+                  &:nth-child(4) {
+                    width: 13%;
+                  }
+                }
+
+                thead {
+                  &:first-child {
+                    tr {
+                      th {
+                        background-color: #ddd;
+                        color: #000;
+                      }
+                    }
+                  }
+                }
+
+                img {
+                  width: 25px;
+                  height: 25px;
+                  margin: 0;
+                  margin-bottom: 3px;
+                  vertical-align: middle;
+                  filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
+
+                  &:hover {
+                    filter: none;
+                  }
+                }
+              }
+            }
           }
         }
-      }
-    }
-
-    img {
-      width: 25px;
-      height: 25px;
-      margin: 0;
-      margin-bottom: 3px;
-      vertical-align: middle;
-      filter: invert(66%) sepia(3%) saturate(30%) hue-rotate(321deg) brightness(93%) contrast(86%);
-
-      &:hover {
-        filter: none;
       }
     }
   }

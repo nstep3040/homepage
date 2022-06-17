@@ -80,6 +80,22 @@
   display: block;
   opacity: 1;
 }
+.header > .top .topMenu .mainMenu > li:nth-child(6) li:last-child {
+  position: relative;
+}
+.header > .top .topMenu .mainMenu > li:nth-child(6) li:last-child::after {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 75px;
+  content: "";
+  background: url(../img/icon/link.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  filter: invert(69%) sepia(4%) saturate(2%) hue-rotate(13deg) brightness(88%) contrast(90%);
+}
 .header > .top .linked {
   position: absolute;
   top: 25px;
@@ -100,68 +116,6 @@
 
 .mainMenu-mobile {
   display: none;
-  position: absolute;
-  top: 80px;
-  right: -300px;
-  width: 300px;
-  height: 200vh;
-  transition: 0.3s ease;
-  z-index: 20;
-  background-color: #fff;
-}
-.mainMenu-mobile a {
-  text-decoration: none;
-  color: #000;
-}
-.mainMenu-mobile details:not(:last-child) {
-  border-bottom: 1px solid #333;
-}
-.mainMenu-mobile details summary {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 50px;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #eee;
-  line-height: 50px;
-  padding-left: 28px;
-  background-color: #999;
-  cursor: pointer;
-}
-.mainMenu-mobile details summary a {
-  font-size: 2rem;
-}
-.mainMenu-mobile details summary::-webkit-details-marker {
-  display: none;
-}
-.mainMenu-mobile details summary::before {
-  position: absolute;
-  content: "";
-  top: 18px;
-  left: 15px;
-  border: 0.6rem solid;
-  border-color: transparent transparent transparent #fff;
-  transform: rotate(0);
-  transform-origin: 0.2rem 50%;
-  transition: transform 0.25s ease;
-}
-.mainMenu-mobile details[open] summary::before {
-  transform: rotate(90deg);
-}
-.mainMenu-mobile details li {
-  height: 50px;
-  line-height: 50px;
-  font-size: 2rem;
-  padding-left: 30px;
-  transition: 0.5s ease;
-}
-.mainMenu-mobile details li:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-.mainMenu-mobile details li a {
-  display: block;
 }
 
 @media screen and (max-width: 1250px) {
@@ -309,9 +263,13 @@
 }
 @media screen and (max-width: 767px) {
   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 60px;
     background-color: #fff;
     z-index: 10;
+    transition: all 0.5s ease;
   }
   .header > .top {
     position: relative;
@@ -326,7 +284,7 @@
     height: 60px;
     background: url(../img/logo_01.svg) no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 95%;
   }
   .header > .top .logo > a {
     display: block;
@@ -345,15 +303,64 @@
   .header > .top #menuMobileBtnWrap {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 20px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn.menuMobileOn span {
+    background-color: #fff;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn.menuMobileOn span::before {
+    top: 0;
+    transform: rotateZ(45deg);
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn.menuMobileOn span::after {
+    top: 0;
+    transform: rotateZ(-45deg);
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    border-radius: 2px;
+    background-color: #222;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span::before, .header > .top #menuMobileBtnWrap #menuMobileBtn span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #222;
+    transition: all 0.3s ease;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span::before {
+    top: -8px;
+  }
+  .header > .top #menuMobileBtnWrap #menuMobileBtn span::after {
+    top: 8px;
+  }
+  .header.scrolling {
+    top: -60px;
   }
 
   .mainMenu-mobile {
-    position: absolute;
+    position: fixed;
     top: 60px;
     right: -300px;
     width: 300px;
@@ -375,6 +382,7 @@
     width: 100%;
     height: 50px;
     font-size: 2rem;
+    color: #fff;
     line-height: 50px;
     padding-left: 28px;
     background-color: #999;
@@ -413,6 +421,22 @@
   }
   .mainMenu-mobile details li a {
     display: block;
+  }
+  .mainMenu-mobile details:nth-child(6) li:last-child {
+    position: relative;
+  }
+  .mainMenu-mobile details:nth-child(6) li:last-child::after {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    left: 92px;
+    content: "";
+    background: url(../img/icon/link.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    filter: invert(69%) sepia(4%) saturate(2%) hue-rotate(13deg) brightness(88%) contrast(90%);
   }
 }
 

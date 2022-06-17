@@ -274,7 +274,92 @@ $mainBottomMargin: 200;
   .software_01 {
     width: 100%;
     height: auto;
-    margin-bottom: $mainBottomMargin + px;
+    margin-bottom: calc($mainBottomMargin - 50) + px;
+
+    & > .contentsWrap {
+      width: 90vw;
+      margin: 0 auto;
+      padding: 0;
+
+      & > .main {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 30px;
+
+        & > .detail-info {
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-size: 1.5rem;
+          color: #555;
+          text-align: right;
+        }
+
+        details {
+          & > summary {
+            font-size: 3rem;
+            cursor: pointer;
+            margin: 10px 0;
+
+            & > img {
+              display: inline-block;
+              background-size: contain;
+              vertical-align: middle;
+              margin: 0 !important;
+            }
+          }
+
+          .microsoft-logo img {
+            width: 110px;
+            height: 24px;
+          }
+          .adobe-logo img {
+            width: 100px;
+            height: 26px;
+          }
+          .autodesk-logo img {
+            width: 125px;
+            height: 21px;
+          }
+          .hancom-logo img {
+            width: 90px;
+            height: 33px;
+          }
+          .ahnlab-logo img {
+            width: 90px;
+            height: 21px;
+          }
+          .originLab-logo img {
+            width: 110px;
+            height: 24px;
+          }
+          .coppelia-logo img {
+            width: 140px;
+            height: 12px;
+          }
+          .unity-logo img {
+            width: 80px;
+            height: 30px;
+          }
+        }
+
+        .product_soft {
+          width: 49%;
+
+          &:nth-child(2) {
+            border-right: 1px solid #ccc;
+          }
+
+          & > h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
 
     // background image
     .bg_software01 {
@@ -287,15 +372,16 @@ $mainBottomMargin: 200;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      padding-left: 20px;
+      gap: 10px 20px;
 
       & > li {
+        display: inline-block;
         width: 130px;
         height: auto;
         padding: 10px;
         text-align: center;
         overflow: hidden;
-        margin: 0 15px;
-        margin-bottom: 30px;
         background-color: $listBackground;
 
         & > p {
@@ -308,17 +394,18 @@ $mainBottomMargin: 200;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      padding-left: 20px;
 
       & > li {
+        display: inline-block;
         width: 130px;
         height: auto;
         padding: 10px;
         text-align: center;
         overflow: hidden;
+        background-color: $listBackground;
         margin: 0 15px;
         margin-bottom: 30px;
-        border-radius: 10px;
-        background-color: $listBackground;
 
         & > p {
           font-size: 1.5rem;

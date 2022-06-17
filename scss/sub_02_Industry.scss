@@ -150,10 +150,12 @@ $mainBottomMargin: 200;
     color: #999;
   }
 
-  .teleConWrap {
-    & > details {
+  .contentsWrap {
+    & details {
       & > summary {
-        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
         margin-bottom: 30px;
         vertical-align: middle;
         cursor: pointer;
@@ -741,30 +743,33 @@ $mainBottomMargin: 200;
 @media screen and (max-width: 767px) {
   $listBackground: #eee;
 
-  .main {
-    width: 90vw;
-    margin: 0 auto;
-  }
+  .contentsWrap {
+    padding: 0;
+    .main {
+      width: 90vw;
+      margin: 0 auto;
 
-  .product_indu {
-    margin-bottom: 10px;
+      .product_indu {
+        margin-bottom: 10px;
 
-    img {
-      width: 100%;
-      object-fit: contain;
-      margin-bottom: 10px;
-    }
+        img {
+          width: 100%;
+          object-fit: contain;
+          margin-bottom: 10px;
+        }
 
-    & > h3 {
-      font-size: 2rem;
-      text-align: right;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 10px;
-      color: #333;
-    }
+        & > h3 {
+          font-size: 2rem;
+          text-align: right;
+          border-bottom: 2px solid #ccc;
+          margin-bottom: 10px;
+          color: #333;
+        }
 
-    & > p > span {
-      font-size: 4rem;
+        & > p > span {
+          font-size: 4rem;
+        }
+      }
     }
   }
 
@@ -778,7 +783,7 @@ $mainBottomMargin: 200;
 
     //background image
     .bg_industry01 {
-      background: url(../img/teledyne_main_02.png) no-repeat;
+      background: url(../img/underwater/underwater_main_01.png) no-repeat;
       background-size: cover;
       background-position: center;
     }
@@ -806,26 +811,136 @@ $mainBottomMargin: 200;
       }
     }
 
-    // product teledyne
-    .tele_Con01 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+    #underwater__connector,
+    #underwater__sonar,
+    #underwater__rov {
+      font-size: 2rem;
+    }
 
-      & > li {
-        display: inline-block;
-        width: 130px;
-        height: auto;
-        padding: 10px;
-        text-align: center;
-        overflow: hidden;
-        border-radius: 10px;
-        background-color: $listBackground;
-        margin: 0 15px;
-        margin-bottom: 30px;
+    .contentsWrap {
+      & details {
+        & > summary {
+          display: flex;
+          align-items: center;
+          font-size: 1.7rem;
+          margin-bottom: 30px;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+      }
 
-        & > p {
-          font-size: 1.5rem;
+      // product teledyne
+      .tele_Con01 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px 10px;
+
+        & > li {
+          display: inline-block;
+          width: 130px;
+          height: auto;
+          padding: 10px;
+          text-align: center;
+          overflow: hidden;
+          background-color: $listBackground;
+
+          & > p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .sonarWrap {
+        .sonar {
+          padding-left: 0;
+          margin-bottom: 30px;
+
+          & > li {
+            margin-top: 0;
+            margin-bottom: 10px;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              gap: 10px;
+            }
+
+            & > figure {
+              display: inline-block;
+              // width: auto;
+              height: 150px;
+              padding: 15px;
+              background-color: #eee;
+
+              & > img {
+                width: 200px;
+                height: 80%;
+                object-fit: contain;
+                margin: 0 auto;
+              }
+
+              & > figcaption {
+                font-size: 1.8rem;
+                text-align: center;
+                color: #777;
+              }
+            }
+
+            &:nth-child(2) > figure {
+              height: 200px;
+
+              & > img {
+                width: 300px;
+                height: 150px;
+              }
+            }
+
+            ul {
+              padding-left: 20px;
+              li {
+                list-style-type: disc;
+
+                p {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .rovWrap {
+        .rov {
+          padding-left: 0;
+
+          & > li {
+            margin-bottom: 10px;
+
+            &:first-child {
+              background-color: #eee;
+              width: 320px;
+              height: 300px;
+              padding: 10px;
+
+              & > img {
+                width: 300px;
+                object-fit: contain;
+              }
+            }
+            ul {
+              padding-left: 20px;
+              li {
+                list-style-type: disc;
+
+                p {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -871,6 +986,7 @@ $mainBottomMargin: 200;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      gap: 10px 10px;
 
       & > li {
         position: relative;
@@ -879,10 +995,7 @@ $mainBottomMargin: 200;
         height: auto;
         padding: 10px;
         text-align: center;
-        border-radius: 10px;
         background-color: $listBackground;
-        margin: 0 15px;
-        margin-bottom: 30px;
 
         & > img {
           height: 100px;
@@ -1150,12 +1263,12 @@ $mainBottomMargin: 200;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      gap: 30px 15px;
+      gap: 10px 10px;
 
       & > li {
-        position: relative;
+        // position: relative;
         display: inline-block;
-        width: 130px;
+        width: 135px;
         height: auto;
         padding: 10px;
         text-align: center;

@@ -8,6 +8,15 @@ $mainBottomMargin: 200;
   .main {
     width: 75vw;
     margin: 0 auto;
+
+    .inner {
+      h2 {
+        display: inline-block;
+        font-size: 2.5rem;
+        padding: 5px 10px;
+        border: 3px solid rgb(0, 102, 229);
+      }
+    }
   }
 
   // background image
@@ -88,7 +97,7 @@ $mainBottomMargin: 200;
     .adress {
       strong {
         display: inline-block;
-        padding: 15px 30px 5px 0;
+        padding: 0;
       }
 
       p {
@@ -97,11 +106,27 @@ $mainBottomMargin: 200;
         padding: 0;
       }
 
+      & > li {
+        padding-bottom: 10px;
+      }
+
       & > ul {
         & > li {
-          &:first-child {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          word-break: keep-all;
+          padding: 10px 0;
+          gap: 3px 0;
+
+          &:not(:last-child) {
             border-bottom: 1px solid #ccc;
           }
+
+          // &:first-child {
+          //   border-bottom: 1px solid #ccc;
+          // }
         }
       }
     }

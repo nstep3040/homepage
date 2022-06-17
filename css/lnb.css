@@ -1,8 +1,6 @@
 @charset "UTF-8";
 .lnb {
   display: block;
-  top: 400px;
-  right: 100px;
   width: 200px;
   height: auto;
   padding: 10px 0;
@@ -70,6 +68,12 @@
 }
 .lnb .lnb__menu ul > li:hover > a {
   font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .lnb {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=lnb.css.map */

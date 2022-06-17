@@ -1,7 +1,6 @@
 .lnb {
+  // position: sticky;
   display: block;
-  top: 400px;
-  right: 100px;
   width: 200px;
   height: auto;
   padding: 10px 0;
@@ -82,5 +81,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lnb {
+    display: none;
   }
 }

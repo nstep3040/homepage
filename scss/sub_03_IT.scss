@@ -512,41 +512,53 @@ $mainBottomMargin: 200;
         }
       }
 
-      .samsung-logo img {
-        width: 180px;
+      .ampere-logo img {
+        width: 67px;
         height: 35px;
+      }
+      .samsung-logo img {
+        width: 110px;
+        height: 17px;
       }
       .lg-logo img {
-        width: 110px;
-        height: 50px;
+        width: 57px;
+        height: 25px;
       }
       .apple-logo img {
-        width: 50px;
-        height: 60px;
+        width: 28px;
+        height: 32px;
       }
       .hp-logo img {
-        width: 60px;
-        height: 60px;
+        width: 32px;
+        height: 32px;
       }
       .lenovo-logo img {
-        width: 155px;
-        height: 35px;
+        width: 95px;
+        height: 20px;
       }
       .dell-logo img {
-        width: 65px;
-        height: 65px;
+        width: 33px;
+        height: 33px;
       }
       .asus-logo img {
-        width: 145px;
-        height: 35px;
+        width: 85px;
+        height: 17px;
       }
       .microsoft-logo img {
         width: 170px;
         height: 40px;
       }
       .wacom-logo img {
-        width: 80px;
-        height: 75px;
+        width: 90px;
+        height: 16px;
+      }
+      .zotac-logo img {
+        width: 110px;
+        height: 22px;
+      }
+      .gskill-logo img {
+        width: 63px;
+        height: 31px;
       }
     }
   }
@@ -556,7 +568,7 @@ $mainBottomMargin: 200;
   .it_01 {
     width: 100%;
     height: auto;
-    margin-bottom: $mainBottomMargin + px;
+    margin-bottom: calc($mainBottomMargin - 50) + px;
 
     // background image
     .bg_it01 {
@@ -565,24 +577,33 @@ $mainBottomMargin: 200;
       background-position: center;
     }
 
-    .pc_01 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+    .contentsWrap {
+      width: 90vw;
+      .main {
+        width: 90vw;
+        margin: 0 auto;
 
-      & > li {
-        width: 130px;
-        height: auto;
-        padding: 10px;
-        text-align: center;
-        overflow: hidden;
-        margin: 0 15px;
-        margin-bottom: 30px;
-        border-radius: 10px;
-        background-color: $listBackground;
+        & > .product_it:nth-child(2) {
+          margin-bottom: 30px;
+        }
+        .pc_01 {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          gap: 10px 10px;
 
-        & > p {
-          font-size: 1.5rem;
+          & > li {
+            width: 130px;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+            overflow: hidden;
+            background-color: $listBackground;
+
+            & > p {
+              font-size: 1.5rem;
+            }
+          }
         }
       }
     }

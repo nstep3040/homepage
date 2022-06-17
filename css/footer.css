@@ -28,7 +28,7 @@
   margin: 0 auto;
 }
 .footer .f_info .f_text p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.3rem;
   line-height: 20px;
   color: #555;
@@ -50,9 +50,10 @@
     display: flex;
     width: 100vw;
     height: 80px;
-    background-color: #ccc;
+    padding: 0 15px;
   }
   .footer .f_info {
+    justify-content: center;
     margin: 0 auto;
     height: 100%;
   }
@@ -60,15 +61,17 @@
     display: none;
   }
   .footer .f_info .f_text {
-    float: left;
     margin: 0 auto;
     padding: 10px 0 10px 0;
   }
   .footer .f_info .f_text p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 20px;
     color: #555;
+  }
+  .footer .f_links {
+    display: none;
   }
 }
 

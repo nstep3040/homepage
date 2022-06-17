@@ -7,7 +7,6 @@
   justify-content: center;
   width: 100vw;
   height: 80px;
-  // background-color: #ccc;
   border-top: 3px solid rgb(0, 102, 229);
   gap: 0 15%;
 
@@ -31,7 +30,7 @@
       margin: 0 auto;
 
       & p {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 1.3rem;
         line-height: 20px;
         color: #555;
@@ -60,9 +59,10 @@
     display: flex;
     width: 100vw;
     height: 80px;
-    background-color: #ccc;
+    padding: 0 15px;
 
     & .f_info {
+      justify-content: center;
       margin: 0 auto;
       height: 100%;
 
@@ -72,17 +72,20 @@
       }
 
       & .f_text {
-        float: left;
         margin: 0 auto;
         padding: 10px 0 10px 0;
 
         & p {
-          font-weight: 500;
+          font-weight: 400;
           font-size: 1rem;
           line-height: 20px;
           color: #555;
         }
       }
+    }
+
+    & .f_links {
+      display: none;
     }
   }
 }

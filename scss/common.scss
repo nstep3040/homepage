@@ -79,7 +79,15 @@
   border-bottom: 2px solid #ccc;
 }
 
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------
+
 @media screen and (max-width: 767px) {
+  .backgroundImg {
+    margin-top: 60px;
+  }
+
   .boundaryBar {
     margin-bottom: 20px;
 
@@ -156,6 +164,50 @@ details {
   &[open] summary {
     &::before {
       transform: rotate(90deg);
+    }
+  }
+}
+
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+
+@media screen and (max-width: 767px) {
+  details {
+    summary {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      min-width: 100px;
+      height: 50px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #000;
+      line-height: 50px;
+      padding-left: 30px;
+      cursor: pointer;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 18px;
+        left: 15px;
+        border: 0.6rem solid;
+        border-color: transparent transparent transparent #000;
+        transform: rotate(0);
+        transform-origin: 0.3rem 50%;
+        transition: transform 0.25s ease;
+      }
+    }
+
+    &[open] summary {
+      &::before {
+        transform: rotate(90deg);
+      }
     }
   }
 }
