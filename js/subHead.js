@@ -14,7 +14,7 @@ document.write(`
     <meta property="og:description" content="수중장비&middot;마그네틱&middot;RFID 및 IT DEVICE, SOFTWARE 전문기업">
     <!-- <meta property="og:image" content="http://www.mysite.com/myimage.jpg"> -->
     <meta property="og:url" content="http://www.nstep.co.kr">
-    <link rel="icon" href="../img/icon/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="icon" href="../img/icon/favicon_02.ico" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="../css/common.css?ver=1.1">
     <title>Welcom to NextStep</title>
     </head>
@@ -22,7 +22,7 @@ document.write(`
     <body>
     <div class="wrap">
         <!-- Header -->
-        <header class="header clearfix stop-dragging">
+        <header id="header" class="header clearfix stop-dragging">
             <div class="top">
                 <div class="logo">
                     <a href="../index.html"></a>
@@ -70,6 +70,7 @@ document.write(`
                             <a href="./sub_06_Contact_01.html">CONTACT</a>
                             <ul class="subMenu">
                                 <li><a href="./sub_06_Contact_01.html">오시는 길</a></li>
+                                <li><a href="https://blog.naver.com/nstep3040" target="_blank">블로그</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -128,6 +129,7 @@ document.write(`
                 <summary>CONTACT</summary>
                 <ul>
                     <li><a href="./sub_06_Contact_01.html">오시는 길</a></li>
+                    <li><a href="https://blog.naver.com/nstep3040" target="_blank">블로그</a></li>
                 </ul>
             </details>
         </div>
